@@ -8,8 +8,8 @@ class Expressable {
 		this.operator = operator;
 	}
 
-	async getConfidence(){
-		return this.operator.express(this.left, this.right);
+	async express(ctx){
+		return this.operator.express(this.left, this.right, ctx);
 	}
 }
 

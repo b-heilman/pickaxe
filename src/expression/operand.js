@@ -1,18 +1,18 @@
 
-class operand {
-	constructor(value){
-		this._value;
+class Operand {
+	constructor(field){
+		this.field = field;
 	}
 
-	async getValue(){
-		return this._value;
+	async getValue(ctx){
+		return ctx[this.field];
 	}
 
 	toJson(){
-		return this._value;
+		return this.field;
 	}
 }
 
 module.exports = {
 	Operand
-}
+};

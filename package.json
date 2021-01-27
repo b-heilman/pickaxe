@@ -1,0 +1,28 @@
+{
+  "name": "pickaxe",
+  "version": "1.0.0",
+  "description": "Framework for developing evolving solutions",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b-heilman/pickaxe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b-heilman/pickaxe/issues"
+  },
+  "homepage": "https://github.com/b-heilman/pickaxe#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "jshint": "^2.12.0",
+    "mocha": "^7.2.0",
+    "sinon": "^9.2.1",
+    "sinon-chai": "^3.5.0"
+  },
+  "scripts": {
+    "lint": "node ./node_modules/jshint/bin/jshint ./src",
+    "test": "npm run lint && mocha --recursive \"./src/**/*.spec.js\""
+  }
+}
