@@ -1,28 +1,30 @@
 
 class Sequence {
-	constructor(fn, symbol){
-		this.expressions = [];
+	constructor(){
+		this.expressables = [];
 	}
 
-	addExpression(expressable){
-		this.expressions.push(expressable);
+	addExpressable(expressable){
+		this.expressables.push(expressable);
 	}
 
-	async getConfidence(ctx){
-		const summation = (
-			await this.expressions.map(
-				expressable.getConfidence(ctx)
-			)
+	async express(ctx){
+		return (
+			await Promise.all(this.expressables.map(
+				expressable => expressable.express(ctx)
+			))
 		).reduce(
 			(agg, value) => agg + value,
 			0
 		);
+	}
 
-		return summation / this.expressions.length;
+	async getConfidence(ctx){
+		return (await this.express(ctx)) / this.expressables.length;
 	}
 
 	toJson(){
-		return this.expressions;
+		return this.expressables;
 	}
 }
 
