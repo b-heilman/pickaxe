@@ -20,25 +20,32 @@ class Collection{
 		this._.push(new Datum(datum));
 	}
 
-	getIndex(name){
-		return this.index[name];
+	getIndex(index){
+		return this.index[index];
 	}
 
-	getRange(from, to){
+	getByRange(from, to){
 		const fi = this.index[from];
 		const ti = this.index[to];
 
-		const rtn = [];
 		if (fi < ti){
-			for(let i = fi; i <= ti; i++){
-				rtn.push(i);
-			}
+			return this._.slice(fi, ti+1);
 		} else {
-			for(let i = ti; i <= fi; i++){
-				rtn.push(i);
-			}
+			return this._.slice(ti, fi+1);
 		}
+	}
 
-		return rtn;
+	getByOffset(index, offset){
+		const pos = this.index[index];
+
+		return this._.slice(pos-offset, pos+1);
+	}
+
+	toJson(){
+		return this._;
 	}
 }
+
+module.exports = {
+	Collection
+};

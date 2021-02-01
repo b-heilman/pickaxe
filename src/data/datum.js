@@ -37,6 +37,10 @@ class Datum {
 			value
 		);
 	}
+
+	toJson(){
+		return this._;
+	}
 }
 
 module.exports = {
