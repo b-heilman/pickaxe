@@ -4,6 +4,18 @@ const {get, set} = require('bmoor/src/core.js');
 // singular instance on the sequence.  
 // POJO that has and index of [class][...order][value]
 // attempts to normalize how data is defined on a datum level
+function computePath(classification, field, filters = null){
+	if (filters && filters.length){
+		const f = filters.slice(0);
+
+		f.unshift(classification);
+		f.push(field);
+
+		return f;
+	} else {
+		return [classification, field];
+	}
+}
 
 class Datum {
 	constructor(data){
@@ -11,29 +23,22 @@ class Datum {
 	}
 
 	get(path){
-		get(this._, path);
+		return get(this._, path);
 	}
 
 	set(path, value){
-		set(this._, path, value);
+		return set(this._, path, value);
 	}
 
-	computePath(classification, field, filters = []){
-		filters.unshift(classification);
-		filters.push(field);
-
-		return filters;
-	}
-
-	fetch(classification, ...filters, field){
+	fetch(classification, field, filters = null){
 		return this.get(
-			this.computePath(classification, field, filters)
+			computePath(classification, field, filters)
 		);
 	}
 
-	assign(classification, ...filters, field, value){
+	assign(classification, field, value, filters = null){
 		return this.set(
-			this.computePath(classification, field, filters), 
+			computePath(classification, field, filters), 
 			value
 		);
 	}
@@ -44,5 +49,6 @@ class Datum {
 }
 
 module.exports = {
-	Datum
+	Datum,
+	computePath
 };

@@ -29,16 +29,16 @@ class Collection{
 		const ti = this.index[to];
 
 		if (fi < ti){
-			return this._.slice(fi, ti+1);
+			return this._.slice(fi-1, ti);
 		} else {
-			return this._.slice(ti, fi+1);
+			return this._.slice(ti-1, fi);
 		}
 	}
 
 	getByOffset(index, offset){
 		const pos = this.index[index];
 
-		return this._.slice(pos-offset, pos+1);
+		return this._.slice(pos-offset-1, pos);
 	}
 
 	toJson(){
