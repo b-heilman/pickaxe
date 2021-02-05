@@ -85,9 +85,8 @@ describe('data/datum', function() {
 		it('should properly serialize', function(){
 			const datum = new sut.Datum({foo: 'bar'});
 
-			expect(JSON.stringify(datum.toJson()))
+			expect(JSON.stringify(datum))
 			.to.equal('{"foo":"bar"}');
-
 		});
 	});
 });

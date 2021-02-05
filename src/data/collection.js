@@ -41,7 +41,11 @@ class Collection{
 		return this._.slice(pos-offset-1, pos);
 	}
 
-	toJson(){
+	getAll(){
+		return this._;
+	}
+
+	toJSON(){
 		return this._;
 	}
 }

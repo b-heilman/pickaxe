@@ -92,6 +92,19 @@ describe('data/collection', function() {
 	});
 
 	describe('.toJson', function(){
-
+		it('should work', function(){
+			expect(
+				JSON.parse(JSON.stringify(collection))
+			).to.deep.equal([
+				{value: 1},
+				{value: 2},
+				{value: 3},
+				{value: 4},
+				{value: 5},
+				{value: 6},
+				{value: 7},
+				{value: 8}
+			]);
+		});
 	});
 });

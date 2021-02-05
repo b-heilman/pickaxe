@@ -43,7 +43,7 @@ class Datum {
 		);
 	}
 
-	toJson(){
+	toJSON(){
 		return this._;
 	}
 }
