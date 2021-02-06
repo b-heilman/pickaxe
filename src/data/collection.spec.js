@@ -58,36 +58,47 @@ describe('data/collection', function() {
 		});
 	});
 
-	describe('.getIndex', function(){
+	describe('.getAt', function(){
 		it('should work', function(){
-			expect(collection.getIndex('2020-01-03'))
-			.to.equal(2);
+			expect(
+				collection.getAt('2020-01-03').datum.get('value')
+			).to.deep.equal(3);
 
-			expect(collection.getIndex('2020-01-07'))
-			.to.equal(6);
+			expect(
+				collection.getAt('2020-01-07', 2).datum.get('value')
+			).to.deep.equal(5);
 		});
 	});
 
-	describe('.getByRange', function(){
+	describe('.getDatum', function(){
 		it('should work', function(){
 			expect(
-				collection.getByRange('2020-01-03', '2020-01-07')
-				.map(datum => datum.get('value'))
-			).to.deep.equal([2,3,4,5,6]);
+				collection.getDatum('2020-01-03').get('value')
+			).to.deep.equal(3);
 
 			expect(
-				collection.getByRange('2020-01-07', '2020-01-03')
-				.map(datum => datum.get('value'))
-			).to.deep.equal([2,3,4,5,6]);
+				collection.getDatum('2020-01-07', 2).get('value')
+			).to.deep.equal(5);
 		});
 	});
 
-	describe('.getByOffset', function(){
+	describe('.getRange', function(){
 		it('should work', function(){
 			expect(
-				collection.getByOffset('2020-01-05', 2)
-				.map(datum => datum.get('value'))
-			).to.deep.equal([2,3,4]);
+				collection.getRange('2020-01-03', 2)
+			).to.deep.equal(['2020-01-01', '2020-01-02', '2020-01-03']);
+
+			expect(
+				collection.getRange('2020-01-05', 2, 2)
+			).to.deep.equal(['2020-01-01', '2020-01-02', '2020-01-03']);
+
+			expect(
+				collection.getRange('2020-01-03', 0)
+			).to.deep.equal(['2020-01-03']);
+
+			expect(
+				collection.getRange('2020-01-05', 0, 2)
+			).to.deep.equal(['2020-01-03']);
 		});
 	});
 

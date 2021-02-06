@@ -13,40 +13,71 @@ class Collection{
 		this.index = {};
 	}
 
-	addDatum(index, datum = {}){
+	addDatum(interval, datum = {}){
 		const i = this._.length;
-		this.index[index] = i;
+		this.index[interval] = i;
 
-		this._.push(new Datum(datum));
+		this._.push({
+			interval,
+			datum: new Datum(datum)
+		});
 	}
 
-	getIndex(index){
-		return this.index[index];
-	}
+	getAt(interval, offset=0){
+		let pos = this.index[interval]-offset;
 
-	getByRange(from, to){
-		const fi = this.index[from];
-		const ti = this.index[to];
-
-		if (fi < ti){
-			return this._.slice(fi-1, ti);
-		} else {
-			return this._.slice(ti-1, fi);
+		if (pos < 0){
+			pos = 0;
 		}
+
+		return this._[pos];
 	}
 
-	getByOffset(index, offset){
-		const pos = this.index[index];
+	getDatum(interval, offset){
+		return this.getAt(interval, offset).datum;
+	}
 
-		return this._.slice(pos-offset-1, pos);
+	getOffset(interval, offset){
+		return this.getAt(interval, offset).interval;
+	}
+
+	getRange(interval, width, offset=0){
+		const end = this.index[interval] - offset;
+		const rtn = [];
+		let pos = end - width;
+
+		if (pos < 0){
+			pos = 0;
+		}
+
+		for(let i = pos, c = end+1; i < c; i++){
+			rtn.push(this._[i].interval);
+		}
+
+		return rtn;
 	}
 
 	getAll(){
-		return this._;
+		return this._.map(d => d.datum);
+	}
+
+	getKeys(){
+		return this._.map(d => d.interval);
+	}
+
+	getValues(path){
+		return this._.map(d => d.datum.get(path));
+	}
+
+	getEntries(path){
+		return this._.map(d => ({
+			interval: d.interval,
+			value: d.datum.get(path)
+		}));
 	}
 
 	toJSON(){
-		return this._;
+		return this.getAll();
 	}
 }
 
