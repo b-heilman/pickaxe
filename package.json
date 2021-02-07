@@ -24,5 +24,8 @@
   "scripts": {
     "lint": "node ./node_modules/jshint/bin/jshint ./src",
     "test": "npm run lint && mocha --recursive \"./src/**/*.spec.js\""
+  },
+  "dependencies": {
+    "bmoor": "^0.8.12"
   }
 }
