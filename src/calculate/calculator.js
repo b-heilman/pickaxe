@@ -25,11 +25,13 @@ class Calculator {
 						const subFormula = req.formula;
 
 						if (subFormula){
-							if (req.range){
+							const size = req.size - 1;
+
+							if (size > 1){
 								return Promise.all(
 									this.collection.getRange(
 										interval,
-										req.range,
+										size,
 										req.offset
 									).map(sub => this.calc(
 										subFormula,
@@ -51,11 +53,13 @@ class Calculator {
 								);
 							}
 						} else if (req.field){
-							if (req.range){
+							const size = req.size - 1;
+
+							if (size > 1){
 								return Promise.all(
 									this.collection.getRange(
 										interval,
-										req.range,
+										size,
 										req.offset
 									).map(
 										sub => this.collection.getDatum(sub)
@@ -97,6 +101,26 @@ class Calculator {
 				value: await this.calc(formula, interval)
 			})
 		));
+	}
+
+	async dump(interval, formulas = null){
+		if (!formulas){
+			formulas = Object.keys(this.formulas);
+		}
+
+		return formulas.reduce(
+			async (prom, formula) => {
+				const [agg, value] = await Promise.all([
+					prom,
+					this.calc(formula, interval)
+				]);
+
+				agg[formula] = value;
+
+				return agg;
+			},
+			Promise.resolve({})
+		);
 	}
 }
 

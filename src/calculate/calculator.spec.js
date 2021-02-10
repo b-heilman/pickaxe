@@ -48,7 +48,7 @@ describe('calculate/caculator', function() {
 		});
 
 		collection.addDatum('2020-01-10', {
-			value: 5
+			value: 2
 		});
 
 		collection.addDatum('2020-01-11', {
@@ -75,7 +75,7 @@ describe('calculate/caculator', function() {
 			'average.value': {
 				requirements: [{
 					field: 'value',
-					range: 3
+					size: 3
 				}],
 				calculate: function(vals){
 					return vals.reduce((agg, val) => agg+val,0) / vals.length;
@@ -141,7 +141,7 @@ describe('calculate/caculator', function() {
 
 			expect(
 				await calculator.calc('trending.up', '2020-01-12')
-			).to.equal(false);
+			).to.equal(true);
 
 			expect(
 				await calculator.calc('trending.up', '2020-01-13')

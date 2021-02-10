@@ -37,7 +37,7 @@ const kernels = {
 		return 1 / (Math.exp(v1) + Math.exp(-v1));
 	},
 
-	uniformn: function(x1 , x2 , scale) {
+	uniform: function(x1 , x2 , scale) {
 		if (Math.abs((x1 - x2) / scale) > 1) {
 			return 0;
 		} else {
@@ -129,9 +129,14 @@ function kernelFactory(method, scale=1){
 	};
 }
 
+function difference(x1, x2){
+	return Math.abs(x1-x2);
+}
+
 module.exports = {
 	average,
 	max,
 	min,
+	difference, 
 	kernelFactory
 };
