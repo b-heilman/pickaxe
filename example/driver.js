@@ -9,6 +9,10 @@ const formula = require('../src/calculate/formula.js');
 
 const collection = new Collection();
 
+/**
+ * I wanna figure out how to take the below and make some of it event
+ * easier to script.  There's a lot of boilerplate there
+ **/
 const formulas = {
 	'average-5.close': {
 		requirements: [{
@@ -27,7 +31,92 @@ const formulas = {
 		}],
 		calculate: formula.average
 	},
+
+	'delta.close': {
+		requirements: [{
+			field: 'close',
+			offset: 1
+		}, {
+			field: 'close',
+			offset: 0
+		}],
+		calculate: function(was, became){
+			return became - was;
+		}
+	},
+
+	'average-50.volume': {
+		requirements: [{
+			field: 'volume',
+			size: 50
+		}],
+		calculate: formula.average
+	},
+
+	'normalized-50.volume': {
+		requirements: [{
+			field: 'volume',
+			offset: 0
+		}, {
+			formula: 'average-50.volume'
+		}],
+		calculate: function(volume, avg){
+			return volume / avg;
+		}
+	},
+
+	'normalized-50.close': {
+		requirements: [{
+			formula: 'delta.close'
+		}, {
+			formula: 'normalized-50.volume'
+		}],
+		calculate: function(delta, normalized){
+			console.log('->', delta, '*', normalized);
+			return delta * normalized;
+		}
+	},
 	
+	'average-10.volume': {
+		requirements: [{
+			field: 'volume',
+			size: 10
+		}],
+		calculate: formula.average
+	},
+
+	'normalized-10.volume': {
+		requirements: [{
+			field: 'volume',
+			offset: 0
+		}, {
+			formula: 'average-10.volume'
+		}],
+		calculate: function(volume, avg){
+			return volume / avg;
+		}
+	},
+
+	'average-5.volume': {
+		requirements: [{
+			field: 'volume',
+			size: 5
+		}],
+		calculate: formula.average
+	},
+
+	'normalized-5.volume': {
+		requirements: [{
+			field: 'volume',
+			offset: 0
+		}, {
+			formula: 'average-5.volume'
+		}],
+		calculate: function(volume, avg){
+			return volume / avg;
+		}
+	},
+
 	'smooth.gaussian-5-1.close': {
 		requirements: [{
 			field: 'close',
@@ -136,5 +225,11 @@ toJson()
 		})
 	)
 ).then(() => run('2021-02-08'))
+.then(() => run('2021-02-05'))
+.then(() => run('2021-02-04'))
+.then(() => run('2021-02-03'))
 .then(() => run('2020-12-16'))
-.then(() => run('2020-11-03'));
+.then(() => run('2020-11-03'))
+.then(async () => {
+	console.log(await calculator.calcAll('normalized-50.close'));
+});

@@ -5,10 +5,18 @@ class Calculator {
 		this.collection = collection;
 	}
 
-	addFormula(formula, path, requirements, calculate){
-		this.formulas[formula] = {
-			requirements,
-			calculate
+	addSeries(opts, factory){
+		return opts.map(
+			opt => factory(opt).map(
+				settings => this.addFormula(settings)
+			)
+		);
+	}
+
+	addFormula(settings){
+		this.formulas[settings.formula] = {
+			requirements: settings.requirements,
+			calculate: settings.calculate
 		};
 	}
 
