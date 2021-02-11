@@ -102,8 +102,14 @@ class Calculator {
 		}
 	}
 
-	async calcAll(formula){
-		return Promise.all(this.collection.getKeys().map(
+	async calcAll(formula, limit=0){
+		let keys = this.collection.getKeys();
+
+		if (limit){
+			keys = keys.slice(keys.length-limit);
+		}
+
+		return Promise.all(keys.map(
 			async (interval) => ({
 				interval,
 				value: await this.calc(formula, interval)

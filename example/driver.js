@@ -231,5 +231,17 @@ toJson()
 .then(() => run('2020-12-16'))
 .then(() => run('2020-11-03'))
 .then(async () => {
-	console.log(await calculator.calcAll('normalized-50.close'));
+	const CliGraph = require('cli-graph');
+
+	const vals = await calculator.calcAll('normalized-50.close', 100);
+console.log('vals', vals);
+	var g1 = new CliGraph({
+		height: 30, 
+		width: 49
+	}).setFunctionX(function (x) {
+		console.log('x', x);
+		return vals[x+50].value;
+	});
+
+	console.log(g1.toString());
 });
