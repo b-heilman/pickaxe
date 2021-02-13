@@ -23,10 +23,9 @@ class Calculator {
 	async calc(formula, interval){
 		const exp = this.formulas[formula];
 		const datum = this.collection.getDatum(interval);
+		let value = datum.get(formula);
 
 		if (exp && datum){
-			let value = datum.get(formula);
-
 			if (value === undefined){
 				const reqs = await Promise.all(exp.requirements.map(
 					async (req) => {
@@ -95,11 +94,20 @@ class Calculator {
 
 			return value;
 		} else if (!exp){
-			throw new Error(`unknown formula: ${formula}`);
+			if (value === undefined){
+				throw new Error(`unknown formula: ${formula}`);
+			} else {
+				return value; // raw value
+			}
+			
 		} else {
 			console.log('debug', this.collection.getKeys());
 			throw new Error(`unknown datum: ${interval}`);
 		}
+	}
+
+	getFormulas(){
+		return Object.keys(this.formulas);
 	}
 
 	async calcAll(formula, limit=0){
@@ -117,9 +125,9 @@ class Calculator {
 		));
 	}
 
-	async dump(interval, formulas = null){
+	async dumpDatum(interval, formulas = null){
 		if (!formulas){
-			formulas = Object.keys(this.formulas);
+			formulas = this.getFormulas();
 		}
 
 		return formulas.reduce(
@@ -135,6 +143,21 @@ class Calculator {
 			},
 			Promise.resolve({})
 		);
+	}
+
+	async dump(config={}){
+		let keys = this.collection.getKeys();
+
+		if (config.limit){
+			keys = keys.slice(keys.length-config.limit);
+		}
+
+		return Promise.all(keys.map(
+			async (interval) => ({
+				values: await this.dumpDatum(interval, config.formulas),
+				interval: interval
+			})
+		));
 	}
 }
 

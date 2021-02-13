@@ -1,4 +1,5 @@
 
+const fs = require('fs');
 const path = require('path');
 
 const toJson = require('csvtojson');
@@ -72,7 +73,6 @@ const formulas = {
 			formula: 'normalized-50.volume'
 		}],
 		calculate: function(delta, normalized){
-			console.log('->', delta, '*', normalized);
 			return delta * normalized;
 		}
 	},
@@ -207,10 +207,10 @@ async function run(date){
 	
 	console.log(JSON.stringify(await collection.getDatum(date), null, 2));
 	
-	console.log(JSON.stringify(await calculator.dump(date), null, 2));
+	console.log(JSON.stringify(await calculator.dumpDatum(date), null, 2));
 }
 
-const file = path.normalize(__dirname+'/AMD.csv');
+const file = path.resolve(__dirname, './AMD.csv');
 
 toJson()
 .fromFile(file)
@@ -231,17 +231,50 @@ toJson()
 .then(() => run('2020-12-16'))
 .then(() => run('2020-11-03'))
 .then(async () => {
-	const CliGraph = require('cli-graph');
+	const formulas = ['open','low','high','close'].concat(
+		calculator.getFormulas()
+	);
 
-	const vals = await calculator.calcAll('normalized-50.close', 100);
-console.log('vals', vals);
-	var g1 = new CliGraph({
-		height: 30, 
-		width: 49
-	}).setFunctionX(function (x) {
-		console.log('x', x);
-		return vals[x+50].value;
-	});
+	const content = await calculator.dump({limit:100, formulas});
 
-	console.log(g1.toString());
+	const graphs = [{
+		title: 'Close',
+		lines: [{
+			field: 'average-5.close',
+			color: 'orange'
+		},{
+			field: 'average-20.close',
+			color: 'red'
+		},{
+			field: 'close',
+			color: 'steelblue',
+		}, {
+			field: 'smooth.gaussian-10-2.close',
+			color: 'green',
+		}, {
+			field: 'smooth.silverman-10-2.close',
+			color: 'grey'
+		}]
+	}, {
+		title: 'Normalized Close',
+		lines: [{
+			field: 'delta.close',
+			color: 'orange'
+		},{
+			field: 'normalized-50.close',
+			color: 'red'
+		}]
+	}];
+
+	fs.writeFile(
+		path.resolve(__dirname, './display/calculated.json'), 
+		JSON.stringify({content, graphs}, null, '\t'), 
+		err => {
+		    if (err) {
+		        console.log('Error writing file', err)
+		    } else {
+		        console.log('Successfully wrote file')
+		    }
+		}
+	)
 });
