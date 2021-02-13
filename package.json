@@ -32,9 +32,10 @@
   },
   "scripts": {
     "lint": "node ./node_modules/jshint/bin/jshint ./src",
-    "test": "npm run lint && mocha --recursive \"./src/**/*.spec.js\"",
-    "start:data": "node example/driver.js",
-    "start:dev": "npm run start:data && webpack serve --config=example/display/webpack.config.js"
+    "test:src": "npm run lint && mocha -w --recursive \"./src/**/*.spec.js\"",
+    "test:example": "mocha -w \"./example/*.spec.js\"",
+    "test": "npm run lint && mocha --recursive \"./src/**/*.spec.js\" && mocha \"./example/*.spec.js\"",
+    "start:dev": "npm run test & webpack serve --config=example/display/webpack.config.js"
   },
   "dependencies": {
     "bmoor": "^0.8.12",

@@ -8,7 +8,7 @@ describe('data/datum', function() {
 		it('should allow access to defined variables', async function(){
 			const datum = new sut.Datum({foo: 'bar'});
 
-			expect(datum.get('foo'))
+			expect(datum.getRaw('foo'))
 			.to.equal('bar');
 
 			expect(datum.get('hello'))
@@ -55,38 +55,21 @@ describe('data/datum', function() {
 		});
 	});
 
-	describe('.fetch', async function(){
-		it('should allow access to defined variables', async function(){
-			const datum = new sut.Datum({foo: {bar: 1}});
-
-			expect(datum.fetch('foo', 'bar'))
-			.to.equal(1);
-
-			expect(datum.fetch('hello', 'world'))
-			.to.equal(undefined);
-		});
-	});
-
-	describe('.assign', async function(){
-		it('should allow access to defined variables', async function(){
-			const datum = new sut.Datum({});
-
-			expect(datum.fetch('foo', 'bar'))
-			.to.equal(undefined);
-
-			datum.assign('foo', 'bar', 20);
-
-			expect(datum.fetch('foo', 'bar'))
-			.to.equal(20);
-		});
-	});
-
 	describe('.toJson', async function(){
-		it('should properly serialize', function(){
+		it('should properly serialize without changes', function(){
 			const datum = new sut.Datum({foo: 'bar'});
 
 			expect(JSON.stringify(datum))
-			.to.equal('{"foo":"bar"}');
+			.to.equal('{}');
+		});
+
+		it('should properly serialize with changes', function(){
+			const datum = new sut.Datum({foo: 'bar'});
+
+			datum.set('hello', 'world');
+
+			expect(JSON.stringify(datum))
+			.to.equal('{"hello":"world"}');
 		});
 	});
 });

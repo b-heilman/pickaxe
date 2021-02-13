@@ -19,7 +19,22 @@ function computePath(classification, field, filters = null){
 
 class Datum {
 	constructor(data){
-		this._ = data;
+		this.raw = data;
+		this._ = {};
+	}
+
+	getRaw(field){
+		return get(this.raw, field);
+	}
+
+	copyRaw(fields){
+		return fields.reduce(
+			(agg, field) => {
+				set(agg, field, this.getRaw(field))
+				return agg;
+			},
+			{}
+		);
 	}
 
 	get(path){
@@ -28,19 +43,6 @@ class Datum {
 
 	set(path, value){
 		return set(this._, path, value);
-	}
-
-	fetch(classification, field, filters = null){
-		return this.get(
-			computePath(classification, field, filters)
-		);
-	}
-
-	assign(classification, field, value, filters = null){
-		return this.set(
-			computePath(classification, field, filters), 
-			value
-		);
 	}
 
 	toJSON(){

@@ -59,7 +59,7 @@ class Calculator {
 									interval
 								);
 							}
-						} else if (req.field){
+						} else if (req.raw){
 							const size = req.size - 1;
 
 							if (size > 1){
@@ -70,19 +70,19 @@ class Calculator {
 										req.offset
 									).map(
 										sub => this.collection.getDatum(sub)
-										.get(req.field)
+										.getRaw(req.raw)
 									)
 								);
 							} else if (req.offset){
 								return this.collection.getDatum(
 									interval, 
 									req.offset
-								).get(req.field);
+								).getRaw(req.raw);
 							} else {
-								return datum.get(req.field);
+								return datum.getRaw(req.raw);
 							}
 						} else {
-							throw new Error('Unknown requirement');
+							throw new Error('Unknown requirement: '+JSON.stringify(req));
 						}
 					}
 				));
@@ -125,10 +125,15 @@ class Calculator {
 		));
 	}
 
-	async dumpDatum(interval, formulas = null){
+	async dumpDatum(interval, formulas = null, raws = []){
+		console.log('->', interval, formulas, raws);
 		if (!formulas){
 			formulas = this.getFormulas();
 		}
+
+		let raw = raws.length ?
+			this.collection.getDatum(interval).copyRaw(raws) :
+			{};
 
 		return formulas.reduce(
 			async (prom, formula) => {
@@ -141,7 +146,7 @@ class Calculator {
 
 				return agg;
 			},
-			Promise.resolve({})
+			Promise.resolve(raw)
 		);
 	}
 
@@ -154,7 +159,7 @@ class Calculator {
 
 		return Promise.all(keys.map(
 			async (interval) => ({
-				values: await this.dumpDatum(interval, config.formulas),
+				values: await this.dumpDatum(interval, config.formulas, config.raws),
 				interval: interval
 			})
 		));

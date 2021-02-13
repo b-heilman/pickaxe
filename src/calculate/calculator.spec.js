@@ -74,7 +74,7 @@ describe('calculate/caculator', function() {
 		const formulas = {
 			'average.value': {
 				requirements: [{
-					field: 'value',
+					raw: 'value',
 					size: 3
 				}],
 				calculate: function(vals){
@@ -83,7 +83,7 @@ describe('calculate/caculator', function() {
 			},
 			'trending.up': {
 				requirements: [{
-					field: 'value'
+					raw: 'value'
 				}, {
 					formula: 'average.value'
 				}],
@@ -93,7 +93,7 @@ describe('calculate/caculator', function() {
 			},
 			'trending.wasUp': {
 				requirements: [{
-					field: 'value'
+					raw: 'value'
 				}, {
 					formula: 'average.value',
 					offset: 2
@@ -160,6 +160,115 @@ describe('calculate/caculator', function() {
 			expect(
 				await calculator.calc('trending.wasUp', '2020-01-13')
 			).to.equal(true);
+		});
+	});
+
+	describe('.dumpDatum', function(){
+		it('should encode things propertly without raws', async function(){
+			const datum = await calculator.dumpDatum(
+				'2020-01-12',
+				['trending.up', 'trending.wasUp']
+			);
+
+			expect(datum)
+			.to.deep.equal({
+				'trending.up': true,
+				'trending.wasUp': false
+			});
+		});
+
+		it('should encode things propertly with raws', async function(){
+			const datum = await calculator.dumpDatum(
+				'2020-01-12',
+				['trending.up', 'trending.wasUp'],
+				['value']
+			);
+
+			expect(datum)
+			.to.deep.equal({
+				value: 5,
+				'trending.up': true,
+				'trending.wasUp': false
+			});
+		});
+	});
+
+	describe('.dump', function(){
+		it('should encode things propertly without raws', async function(){
+			const datum = await calculator.dump({
+				limit: 2,
+				formulas: ['trending.up', 'trending.wasUp']
+			});
+
+			expect(datum)
+			.to.deep.equal([{
+				interval: '2020-01-14',
+				values: {
+					'trending.up': false,
+					'trending.wasUp': true
+				}
+			}, {
+				interval: '2020-01-15',
+				values: {
+					'trending.up': true,
+					'trending.wasUp': true
+				}
+			}]);
+		});
+
+		it('should encode things propertly without raws and formulas', async function(){
+			const datum = await calculator.dump({
+				limit: 3
+			});
+
+			expect(datum)
+			.to.deep.equal([{
+				interval: '2020-01-13',
+				values: {
+					'average.value': 5,
+					'trending.up': true,
+					'trending.wasUp': true
+				}
+			}, {
+				interval: '2020-01-14',
+				values: {
+					'average.value': 5.333333333333333,
+					'trending.up': false,
+					'trending.wasUp': true
+				}
+			}, {
+				interval: '2020-01-15',
+				values: {
+					'average.value': 6.333333333333333,
+					'trending.up': true,
+					'trending.wasUp': true
+				}
+			}]);
+		});
+
+		it('should encode things propertly with raws', async function(){
+			const datum = await calculator.dump({
+				limit: 2,
+				formulas: ['trending.up', 'trending.wasUp'],
+				raws: ['value']
+			});
+
+			expect(datum)
+			.to.deep.equal([{
+				interval: '2020-01-14',
+				values: {
+					value: 5,
+					'trending.up': false,
+					'trending.wasUp': true
+				}
+			}, {
+				interval: '2020-01-15',
+				values: {
+					value: 8,
+					'trending.up': true,
+					'trending.wasUp': true
+				}
+			}]);
 		});
 	});
 });

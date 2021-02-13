@@ -61,11 +61,11 @@ describe('data/collection', function() {
 	describe('.getAt', function(){
 		it('should work', function(){
 			expect(
-				collection.getAt('2020-01-03').datum.get('value')
+				collection.getAt('2020-01-03').datum.getRaw('value')
 			).to.deep.equal(3);
 
 			expect(
-				collection.getAt('2020-01-07', 2).datum.get('value')
+				collection.getAt('2020-01-07', 2).datum.getRaw('value')
 			).to.deep.equal(5);
 		});
 	});
@@ -73,11 +73,25 @@ describe('data/collection', function() {
 	describe('.getDatum', function(){
 		it('should work', function(){
 			expect(
-				collection.getDatum('2020-01-03').get('value')
+				collection.getDatum('2020-01-03').getRaw('value')
 			).to.deep.equal(3);
 
 			expect(
-				collection.getDatum('2020-01-07', 2).get('value')
+				collection.getDatum('2020-01-03').get('value')
+			).to.equal(undefined);
+
+			collection.getDatum('2020-01-03').set('value', 10);
+
+			expect(
+				collection.getDatum('2020-01-03').getRaw('value')
+			).to.deep.equal(3);
+
+			expect(
+				collection.getDatum('2020-01-03').get('value')
+			).to.equal(10);
+
+			expect(
+				collection.getDatum('2020-01-07', 2).getRaw('value')
 			).to.deep.equal(5);
 		});
 	});
@@ -103,18 +117,43 @@ describe('data/collection', function() {
 	});
 
 	describe('.toJson', function(){
-		it('should work', function(){
+		it('should work with no changes', function(){
 			expect(
 				JSON.parse(JSON.stringify(collection))
 			).to.deep.equal([
-				{value: 1},
-				{value: 2},
-				{value: 3},
-				{value: 4},
-				{value: 5},
-				{value: 6},
-				{value: 7},
-				{value: 8}
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]);
+		});
+
+
+		it('should work with changes', function(){
+
+			collection.getDatum('2020-01-01').set('foo', 10);
+			collection.getDatum('2020-01-02').set('bar', 20);
+			collection.getDatum('2020-01-03').set('hello', 30);
+			collection.getDatum('2020-01-04').set('world', 40);
+			collection.getDatum('2020-01-05').set('eins', 50);
+			collection.getDatum('2020-01-06').set('value.zwei', 60);
+			collection.getDatum('2020-01-07').set('value.drei', 70);
+
+			expect(
+				JSON.parse(JSON.stringify(collection))
+			).to.deep.equal([
+				{foo: 10},
+				{bar: 20},
+				{hello: 30},
+				{world: 40},
+				{eins: 50},
+				{value: {zwei: 60}},
+				{value: {drei: 70}},
+				{}
 			]);
 		});
 	});
