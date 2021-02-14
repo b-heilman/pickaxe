@@ -1,14 +1,9 @@
 
-class Plotter {
-	constructor(calculator, plots = {}){
-		this.plots = plots;
-		this.calculator = calculator;
+const {Expressor} = require('./expressor.js');
 
-		calculator.addExpressor('plot', this);
-	}
-
-	async require(req){
-		return this.drawer.require(req);
+class Plotter extends Expressor {
+	constructor(calculator, drawings = {}){
+		super('point', calculator, drawings);
 	}
 }
 

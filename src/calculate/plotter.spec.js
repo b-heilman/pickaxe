@@ -1,12 +1,17 @@
 
 const {expect} = require('chai');
 
-describe('calculate/caculator', function() {
-	const sut = require('./calculator.js');
+describe('calculate/drawer', function() {
+	const sut = require('./plotter.js');
+
+	const {Drawer} = require('./drawer.js');
 	const {Collection} = require('../data/collection.js');
+	const {Calculator} = require('./calculator.js');
 
 	let collection = null;
 	let calculator = null;
+	let drawer = null;
+	let plotter = null;
 
 	beforeEach(function(){
 		collection = new Collection();
@@ -71,23 +76,27 @@ describe('calculate/caculator', function() {
 			value: 8
 		});
 
-		const formulas = {
+		const lines = {
 			'average.value': {
 				requirements: [{
 					raw: 'value',
 					size: 3
 				}],
-				calculate: function(vals){
+				express: function(vals){
 					return vals.reduce((agg, val) => agg+val,0) / vals.length;
 				}
-			},
+			}
+		};
+
+		const plots = {
 			'trending.up': {
 				requirements: [{
 					raw: 'value'
 				}, {
-					formula: 'average.value'
+					type: 'line',
+					name: 'average.value'
 				}],
-				calculate: function(val, avg){
+				express: function(val, avg){
 					return val > avg;
 				}
 			},
@@ -95,77 +104,55 @@ describe('calculate/caculator', function() {
 				requirements: [{
 					raw: 'value'
 				}, {
-					formula: 'average.value',
+					type: 'line',
+					name: 'average.value',
 					offset: 2
 				}],
-				calculate: function(val, avg){
+				express: function(val, avg){
 					return val > avg;
 				}
 			}
 		};
 
-		calculator = new sut.Calculator(collection, formulas);
+		calculator = new Calculator(collection);
+		
+		drawer = new Drawer(calculator, lines);
+		plotter = new sut.Plotter(calculator, plots);
 	});
 
-	describe('.calc', function(){
-		it('should work for average', async function(){
-			expect(
-				await calculator.calc(
-					'average.value', '2020-01-01'
-				)
-			).to.equal(10);
-
-			expect(
-				await calculator.calc(
-					'average.value', '2020-01-02'
-				)
-			).to.equal(10.5);
-
-			expect(
-				await calculator.calc(
-					'average.value', '2020-01-05'
-				)
-			).to.equal(11);
-
-			expect(
-				await calculator.calc(
-					'average.value', '2020-01-13'
-				)
-			).to.equal(5);
-		});
-
+	describe('.calculate', function(){
 		it('should work for trending.up', async function(){
 			expect(
-				await calculator.calc('trending.up', '2020-01-04')
+				await plotter.calculate('trending.up', '2020-01-04')
 			).to.equal(false);
 
 			expect(
-				await calculator.calc('trending.up', '2020-01-12')
+				await plotter.calculate('trending.up', '2020-01-12')
 			).to.equal(true);
 
 			expect(
-				await calculator.calc('trending.up', '2020-01-13')
+				await plotter.calculate('trending.up', '2020-01-13')
 			).to.equal(true);
 		});
 
 		it('should work for trending.wasUp', async function(){
 			expect(
-				await calculator.calc('trending.wasUp', '2020-01-04')
+				await plotter.calculate('trending.wasUp', '2020-01-04')
 			).to.equal(true);
 
 			expect(
-				await calculator.calc('trending.wasUp', '2020-01-12')
+				await plotter.calculate('trending.wasUp', '2020-01-12')
 			).to.equal(false);
 
 			expect(
-				await calculator.calc('trending.wasUp', '2020-01-13')
+				await plotter.calculate('trending.wasUp', '2020-01-13')
 			).to.equal(true);
 		});
 	});
 
-	describe('.dumpDatum', function(){
+	describe('.calculator.dumpDatum', function(){
 		it('should encode things propertly without raws', async function(){
-			const datum = await calculator.dumpDatum(
+			const datum = await drawer.calculator.dumpDatum(
 				'2020-01-12',
 				['trending.up', 'trending.wasUp']
 			);
@@ -178,7 +165,7 @@ describe('calculate/caculator', function() {
 		});
 
 		it('should encode things propertly with raws', async function(){
-			const datum = await calculator.dumpDatum(
+			const datum = await drawer.calculator.dumpDatum(
 				'2020-01-12',
 				['trending.up', 'trending.wasUp'],
 				['value']
@@ -193,11 +180,11 @@ describe('calculate/caculator', function() {
 		});
 	});
 
-	describe('.dump', function(){
+	describe('.calculator.dump', function(){
 		it('should encode things propertly without raws', async function(){
-			const datum = await calculator.dump({
+			const datum = await drawer.calculator.dump({
 				limit: 2,
-				formulas: ['trending.up', 'trending.wasUp']
+				expressions: ['trending.up', 'trending.wasUp']
 			});
 
 			expect(datum)
@@ -217,7 +204,7 @@ describe('calculate/caculator', function() {
 		});
 
 		it('should encode things propertly without raws and formulas', async function(){
-			const datum = await calculator.dump({
+			const datum = await drawer.calculator.dump({
 				limit: 3
 			});
 
@@ -247,9 +234,9 @@ describe('calculate/caculator', function() {
 		});
 
 		it('should encode things propertly with raws', async function(){
-			const datum = await calculator.dump({
+			const datum = await drawer.calculator.dump({
 				limit: 2,
-				formulas: ['trending.up', 'trending.wasUp'],
+				expressions: ['trending.up', 'trending.wasUp'],
 				raws: ['value']
 			});
 

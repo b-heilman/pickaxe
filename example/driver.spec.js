@@ -5,6 +5,8 @@ const {expect} = require('chai');
 
 const toJson = require('csvtojson');
 
+const {Drawer} = require('../src/calculate/drawer.js');
+const {Plotter} = require('../src/calculate/plotter.js');
 const {Calculator} = require('../src/calculate/calculator.js');
 const {Collection} = require('../src/data/collection.js');
 const formula = require('../src/calculate/formula.js');
@@ -13,13 +15,13 @@ const formula = require('../src/calculate/formula.js');
  * I wanna figure out how to take the below and make some of it event
  * easier to script.  There's a lot of boilerplate there
  **/
-const formulas = {
+const lines = {
 	'value.close.average.5': {
 		requirements: [{
 			raw: 'close',
 			size: 5
 		}],
-		calculate: formula.average
+		express: formula.average
 	},
 
 	'value.close.average.10': {
@@ -27,7 +29,15 @@ const formulas = {
 			raw: 'close',
 			size: 10
 		}],
-		calculate: formula.average
+		express: formula.average
+	},
+
+	'value.close.average.50': {
+		requirements: [{
+			raw: 'close',
+			size: 50
+		}],
+		express: formula.average
 	},
 
 	'value.close.average.20': {
@@ -35,7 +45,7 @@ const formulas = {
 			raw: 'close',
 			size: 20
 		}],
-		calculate: formula.average
+		express: formula.average
 	},
 
 	'value.volume.average.5': {
@@ -43,7 +53,7 @@ const formulas = {
 			raw: 'volume',
 			size: 5
 		}],
-		calculate: formula.average
+		express: formula.average
 	},
 	
 	'value.volume.average.10': {
@@ -51,7 +61,7 @@ const formulas = {
 			raw: 'volume',
 			size: 10
 		}],
-		calculate: formula.average
+		express: formula.average
 	},
 
 	'value.volume.average.50': {
@@ -59,7 +69,7 @@ const formulas = {
 			raw: 'volume',
 			size: 50
 		}],
-		calculate: formula.average
+		express: formula.average
 	},
 
 	'value.close.smooth.gaussian.5-1': {
@@ -67,7 +77,7 @@ const formulas = {
 			raw: 'close',
 			size: 5
 		}],
-		calculate: formula.kernelFactory('gaussian', 1)
+		express: formula.kernelFactory('gaussian', 1)
 	},
 	
 	'value.close.smooth.gaussian.10-1': {
@@ -75,7 +85,7 @@ const formulas = {
 			raw: 'close',
 			size: 10
 		}],
-		calculate: formula.kernelFactory('gaussian', 1)
+		express: formula.kernelFactory('gaussian', 1)
 	},
 	
 	'value.close.smooth.gaussian.10-2': {
@@ -83,7 +93,7 @@ const formulas = {
 			raw: 'close',
 			size: 10
 		}],
-		calculate: formula.kernelFactory('gaussian', 2)
+		express: formula.kernelFactory('gaussian', 2)
 	},
 	
 	'value.close.smooth.silverman.5-1': {
@@ -91,7 +101,7 @@ const formulas = {
 			raw: 'close',
 			size: 5
 		}],
-		calculate: formula.kernelFactory('silverman', 1)
+		express: formula.kernelFactory('silverman', 1)
 	},
 	
 	'value.close.smooth.silverman.10-1': {
@@ -99,7 +109,7 @@ const formulas = {
 			raw: 'close',
 			size: 10
 		}],
-		calculate: formula.kernelFactory('silverman', 1)
+		express: formula.kernelFactory('silverman', 1)
 	},
 	
 	'value.close.smooth.silverman.10-2': {
@@ -107,7 +117,7 @@ const formulas = {
 			raw: 'close',
 			size: 10
 		}],
-		calculate: formula.kernelFactory('silverman', 2)
+		express: formula.kernelFactory('silverman', 2)
 	},
 
 	'delta.close': {
@@ -118,7 +128,7 @@ const formulas = {
 			raw: 'close',
 			offset: 0
 		}],
-		calculate: function(was, became){
+		express: function(was, became){
 			return became - was;
 		}
 	},
@@ -128,9 +138,10 @@ const formulas = {
 			raw: 'close',
 			offset: 0
 		}, {
-			formula: 'value.close.average.50'
+			type: 'line',
+			name: 'value.close.average.50'
 		}],
-		calculate: function(close, avg){
+		express: function(close, avg){
 			return close / avg;
 		}
 	},
@@ -140,9 +151,10 @@ const formulas = {
 			raw: 'volume',
 			offset: 0
 		}, {
-			formula: 'value.volume.average.5'
+			type: 'line',
+			name: 'value.volume.average.5'
 		}],
-		calculate: function(volume, avg){
+		express: function(volume, avg){
 			return volume / avg;
 		}
 	},
@@ -152,9 +164,10 @@ const formulas = {
 			raw: 'volume',
 			offset: 0
 		}, {
-			formula: 'value.volume.average.10'
+			type: 'line',
+			name: 'value.volume.average.10'
 		}],
-		calculate: function(volume, avg){
+		express: function(volume, avg){
 			return volume / avg;
 		}
 	},
@@ -164,54 +177,64 @@ const formulas = {
 			raw: 'volume',
 			offset: 0
 		}, {
-			formula: 'value.volume.average.50'
+			type: 'line',
+			name: 'value.volume.average.50'
 		}],
-		calculate: function(volume, avg){
+		express: function(volume, avg){
 			return volume / avg;
 		}
 	},
 
 	'strength.close.50': {
 		requirements: [{
-			formula: 'delta.close'
+			type: 'line',
+			name: 'delta.close'
 		}, {
-			formula: 'normalized.volume.50'
+			type: 'line',
+			name: 'normalized.volume.50'
 		}],
-		calculate: function(delta, normalized){
+		express: function(delta, normalized){
 			return delta * normalized;
 		}
-	},
+	}
+};
 
+const plots = {
 	'trending.up.test1': {
 		requirements: [{
 			raw: 'close',
 			offset: 1
 		}, {
-			formula: 'value.close.smooth.gaussian.5-1'
+			type: 'line',
+			name: 'value.close.smooth.gaussian.5-1'
 		}],
-		calculate: function(close, smooth){
+		express: function(close, smooth){
 			return close < smooth;
 		}
 	},
 
 	'trending.up.test2': {
 		requirements: [{
-			formula: 'value.close.average.5'
+			type: 'line',
+			name: 'value.close.average.5'
 		}, {
-			formula: 'value.close.smooth.gaussian.5-1'
+			type: 'line',
+			name: 'value.close.smooth.gaussian.5-1'
 		}],
-		calculate: function(avg, smooth){
+		express: function(avg, smooth){
 			return avg < smooth;
 		}
 	},
 
 	'trending.up.test3': {
 		requirements: [{
-			formula: 'value.close.average.20'
+			type: 'line',
+			name: 'value.close.average.20'
 		}, {
-			formula: 'value.close.smooth.gaussian.10-1'
+			type: 'line',
+			name: 'value.close.smooth.gaussian.10-1'
 		}],
-		calculate: function(avg, smooth){
+		express: function(avg, smooth){
 			return avg < smooth;
 		}
 	}
@@ -219,12 +242,17 @@ const formulas = {
 
 describe('*example*/driver', function(){
 	let prom = null;
+	let drawer = null;
+	let plotter = null;
 	let calculator = null;
 
 	const collection = new Collection();
 
 	it('should successfully load the calculator', async function(){
-		calculator = new Calculator(collection, formulas);
+		calculator = new Calculator(collection);
+
+		drawer = new Drawer(calculator, lines);
+		plotter = new Plotter(calculator, plots);
 
 		expect(true).to.equal(true);
 	});
@@ -254,7 +282,6 @@ describe('*example*/driver', function(){
 	it ('should successfully export processed data', async function(){
 		const content = await calculator.dump({
 			limit: 100,
-			formulas: calculator.getFormulas(), 
 			raws: ['close','volume']
 		});
 

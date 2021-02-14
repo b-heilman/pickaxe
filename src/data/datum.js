@@ -30,7 +30,8 @@ class Datum {
 	copyRaw(fields){
 		return fields.reduce(
 			(agg, field) => {
-				set(agg, field, this.getRaw(field))
+				set(agg, field, this.getRaw(field));
+				
 				return agg;
 			},
 			{}
