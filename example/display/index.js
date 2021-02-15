@@ -14,13 +14,30 @@ body {
 }
 </style>
 
-<section id='dashboard'style='border: 1px solid black'></section>
+<section id='dashboard'
+	style='border: 1px solid black'
+	></section>
 `;
 
 const {content, graphs} = require('./calculated.json');
 
-function createChart(raw, {title, lines}){
-	const keys = lines.map(l => l.field);
+function createChart(raw, {title, lines, points}){
+	const unique = new Set();
+	const values = new Set();
+
+	lines.forEach(l => {
+		unique.add(l.field);
+	});
+
+	if (points){
+		points.forEach(p => {
+			values.add(p.field);
+			unique.add(p.value);
+		});
+	}
+
+	const numbers = Array.from(unique);
+	const fields = Array.from(values);
 
 	let yMax = null;
 	let yMin = null;
@@ -33,7 +50,7 @@ function createChart(raw, {title, lines}){
 				date: Date.parse(d.interval)
 			};
 
-			return keys.reduce(
+			return numbers.reduce(
 				(agg, key) => {
 					const v = Number(vals[key]);
 
@@ -47,7 +64,14 @@ function createChart(raw, {title, lines}){
 
 					agg[key] = v;
 
-					return agg;
+					return fields.reduce(
+						(agg, key) => {
+							agg[key] = vals[key];
+
+							return agg;
+						},
+						agg
+					);
 				},
 				datum
 			);
@@ -107,12 +131,12 @@ function createChart(raw, {title, lines}){
 			.ticks(20)
 			.tickSize(-height)
 		)
-		.selectAll("text")
-	    .attr("y", 0)
-	    .attr("x", 5)
-	    .attr("dy", ".35em")
-	    .attr("transform", "rotate(90)")
-	    .style("text-anchor", "start");
+		.selectAll('text')
+	    .attr('y', 0)
+	    .attr('x', 5)
+	    .attr('dy', '.35em')
+	    .attr('transform', 'rotate(90)')
+	    .style('text-anchor', 'start');
 
 	// y-axis
 	g.append('g')
@@ -124,16 +148,11 @@ function createChart(raw, {title, lines}){
 
 		const path = d3
 		.line()
-		.x(d => {
-			return xScale(d['date']);
-		})
-		.y(d => {
-			return yScale(d[field]);
-		});
+		.x(d => xScale(d.date))
+		.y(d => yScale(d[field]));
 
 		// Append the path and bind data
-		g
-		.append('path')
+		g.append('path')
 		.data([data])
 		.style('fill', 'none')
 		.attr('id', 'priceChart')
@@ -141,6 +160,28 @@ function createChart(raw, {title, lines}){
 		.attr('stroke-width', '1.5')
 		.attr('d', path);
 	});
+
+	if (points){
+		console.log('has points');
+		points.map(series => {
+			const field = series.field;
+			const value = series.value;
+
+			console.log(data);
+			const filtered = data.filter(d => d[field]);
+			console.log('filtered', filtered);
+			const sub = g.append('g');
+
+			sub.selectAll('circle')
+			.data(filtered)
+			.join('circle')
+			.attr('r', 2.5)
+			.attr('cx', d => xScale(d.date))
+			.attr('cy', d => yScale(d[value]))
+			.style('fill', series.color)
+			.style('opacity', '.5');
+		});
+	}
 }
 
 graphs.map(graph => createChart(content, graph));

@@ -305,6 +305,11 @@ describe('*example*/driver', function(){
 			}, {
 				field: 'value.close.smooth.silverman.10-2',
 				color: 'grey'
+			}],
+			points: [{
+				field: 'trending.up.test3',
+				value: 'close',
+				color: 'white'
 			}]
 		}, {
 			title: 'Normalized Close',
