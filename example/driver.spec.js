@@ -48,6 +48,22 @@ const lines = {
 		express: formula.average
 	},
 
+	'value.close.max.5': {
+		requirements: [{
+			raw: 'close',
+			size: 5
+		}],
+		express: formula.max
+	},
+
+	'value.close.min.5': {
+		requirements: [{
+			raw: 'close',
+			size: 5
+		}],
+		express: formula.min
+	},
+
 	'value.volume.average.5': {
 		requirements: [{
 			raw: 'volume',
@@ -200,7 +216,7 @@ const lines = {
 };
 
 const plots = {
-	'trending.up.test1': {
+	'is.trending.up.1': {
 		requirements: [{
 			raw: 'close',
 			offset: 1
@@ -213,7 +229,7 @@ const plots = {
 		}
 	},
 
-	'trending.up.test2': {
+	'is.trending.up.2': {
 		requirements: [{
 			type: 'line',
 			name: 'value.close.average.5'
@@ -226,7 +242,7 @@ const plots = {
 		}
 	},
 
-	'trending.up.test3': {
+	'is.trending.up.3': {
 		requirements: [{
 			type: 'line',
 			name: 'value.close.average.20'
@@ -237,6 +253,69 @@ const plots = {
 		express: function(avg, smooth){
 			return avg < smooth;
 		}
+	},
+	'is.close.max.5': {
+		requirements: [{
+			raw: 'close'
+		},{
+			type: 'line',
+			name: 'value.close.max.5',
+			offset: 1
+		}, {
+			type: 'line',
+			name: 'value.close.max.5',
+			offset: -5 // looking forward
+		}],
+		express: function(close, backwards, forwards){
+			return close >= backwards && close >= forwards;
+		}
+	},
+	'is.close.min.5': {
+		requirements: [{
+			raw: 'close'
+		},{
+			type: 'line',
+			name: 'value.close.min.5',
+			offset: 1
+		}, {
+			type: 'line',
+			name: 'value.close.min.5',
+			offset: -5 // looking forward
+		}],
+		express: function(close, backwards, forwards){
+			return close <= backwards && close <= forwards;
+		}
+	}
+};
+
+// https://www.investopedia.com/ask/answers/05/fibonacciretracement.asp
+lines['value.close.support.61'] = {
+	offset: 1,
+	pattern: [{
+		type: 'point',
+		name: 'is.close.max.5',
+		test: v => v,
+		value: {
+			raw: 'close'
+		}
+	}, {
+		type: 'point',
+		name: 'is.close.min.5',
+		test: v => v,
+		value: {
+			raw: 'close'
+		}
+	}],
+	express: function(max, min){
+		console.log({min, max});
+
+		if (min === null || max === null){
+			return null;
+		}
+
+		const diff = (max - min) * 0.618;
+
+		return min + diff;
 	}
 };
 
@@ -291,23 +370,32 @@ describe('*example*/driver', function(){
 				field: 'close',
 				color: 'steelblue',
 			}, {
-				field: 'value.close.average.5',
-				color: 'orange'
-			},{
-				field: 'value.close.average.10',
+				field: 'value.close.support.61',
 				color: 'red'
 			},{
-				field: 'value.close.average.20',
-				color: 'pink'
-			},{
-				field: 'value.close.smooth.gaussian.10-2',
-				color: 'green',
+				field: 'value.close.average.5',
+				color: 'orage'
 			}, {
-				field: 'value.close.smooth.silverman.10-2',
-				color: 'grey'
+				field: 'value.close.max.5',
+				color: 'white'
 			}],
 			points: [{
-				field: 'trending.up.test3',
+				field: 'is.trending.up.3',
+				value: 'close',
+				color: 'white'
+			}]
+		}, {
+			title: 'Points Close',
+			lines: [{
+				field: 'close',
+				color: 'steelblue',
+			}],
+			points: [{
+				field: 'is.close.max.5',
+				value: 'close',
+				color: 'red'
+			}, {
+				field: 'is.close.min.5',
 				value: 'close',
 				color: 'white'
 			}]

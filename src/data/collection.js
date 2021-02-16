@@ -23,11 +23,33 @@ class Collection{
 		});
 	}
 
+	intervalAt(pos){
+		if (pos < 0 || pos >= this._.length){
+			return null;
+		} else {
+			return this._[pos].interval;
+		}
+	}
+
+	nextInterval(interval){
+		return this.intervalAt(
+			this.index[interval]+1
+		);
+	}
+
+	prevInterval(interval){
+		return this.intervalAt(
+			this.index[interval]-1
+		);
+	}
+
 	getAt(interval, offset=0){
 		let pos = this.index[interval]-offset;
 
 		if (pos < 0){
 			pos = 0;
+		} else if (pos >= this._.length){
+			pos = this._.length - 1;
 		}
 
 		return this._[pos];

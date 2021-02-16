@@ -34,7 +34,7 @@ class Calculator {
 			const expressor = this.expressors[req.type];
 
 			if (expressor){
-				return expressor.require(interval, req);
+				return expressor.express(interval, req);
 			} else {
 				throw new Error('Unknown expressor: '+req.type);
 			}
@@ -43,9 +43,6 @@ class Calculator {
 		}
 	}
 
-	// this shoupd be renamed and refactored, it needs to 
-	// call the expressors... but... can I do that off just the
-	// formula in a note... brute force way?
 	async express(expression, interval){
 		const expressor = Object.keys(this.expressors)
 		.reduce(

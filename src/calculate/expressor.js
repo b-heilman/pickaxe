@@ -22,10 +22,49 @@ class Expressor {
 		};
 	}
 
-	async express(interval, exp){
-		const args = await Promise.all(exp.requirements.map(
-			req => this.calculator.require(interval, req)
-		));
+	async calc(interval, exp){
+		let args = null;
+
+		if (exp.pattern){
+			if (exp.offset){
+				interval = this.calculator.collection.getOffset(interval, exp.offset);
+			}
+
+			args = await exp.pattern.reduce(
+				async (agg, req) => {
+					let valid = true;
+					const arr = await agg;
+
+					if (interval){
+						do {
+							const value = await this.calculator.require(interval, req);
+
+							if (req.test(value)){
+								// so I know the interval... what do I store?
+								arr.push(
+									await this.calculator.require(interval, req.value)
+								);
+								valid = false;
+							}
+
+							interval = this.calculator.collection.prevInterval(interval);
+						} while(valid && interval);
+					}
+
+					if (valid){
+						// I didn't find a match, so we need to fail this variable
+						arr.push(null);
+					}
+
+					return arr;
+				},
+				[]
+			);
+		} else {
+			args = await Promise.all(exp.requirements.map(
+				req => this.calculator.require(interval, req)
+			));
+		}
 
 		return exp.express(...args);
 	}
@@ -37,7 +76,7 @@ class Expressor {
 
 		if (exp && datum){
 			if (value === undefined){
-				value = await this.express(interval, exp);
+				value = await this.calc(interval, exp);
 
 				datum.set(expression, value);
 			}
@@ -59,7 +98,7 @@ class Expressor {
 		return expression in this.expressions;
 	}
 
-	async require(interval, req){
+	async express(interval, req){
 		const subFormula = req.name;
 
 		if (subFormula){

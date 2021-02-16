@@ -162,14 +162,11 @@ function createChart(raw, {title, lines, points}){
 	});
 
 	if (points){
-		console.log('has points');
 		points.map(series => {
 			const field = series.field;
 			const value = series.value;
 
-			console.log(data);
 			const filtered = data.filter(d => d[field]);
-			console.log('filtered', filtered);
 			const sub = g.append('g');
 
 			sub.selectAll('circle')
@@ -179,7 +176,7 @@ function createChart(raw, {title, lines, points}){
 			.attr('cx', d => xScale(d.date))
 			.attr('cy', d => yScale(d[value]))
 			.style('fill', series.color)
-			.style('opacity', '.5');
+			.style('opacity', '.9');
 		});
 	}
 }

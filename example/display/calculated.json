@@ -8,6 +8,8 @@
 				"value.close.average.10": 80.4180015,
 				"value.close.average.50": 75.23759992,
 				"value.close.average.20": 82.98250045,
+				"value.close.max.5": 78.980003,
+				"value.close.min.5": 76.339996,
 				"value.volume.average.5": 49995800,
 				"value.volume.average.10": 57919600,
 				"value.volume.average.50": 65785700,
@@ -23,9 +25,12 @@
 				"normalized.volume.10": 0.6628757795288641,
 				"normalized.volume.50": 0.5836146761378233,
 				"strength.close.50": -1.324802980374158,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 87.943618472,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-09-16"
 		},
@@ -37,6 +42,8 @@
 				"value.close.average.10": 79.05100169999999,
 				"value.close.average.50": 75.69999997999999,
 				"value.close.average.20": 82.75550080000002,
+				"value.close.max.5": 78.93,
+				"value.close.min.5": 76.339996,
 				"value.volume.average.5": 50819740,
 				"value.volume.average.10": 58444820,
 				"value.volume.average.50": 66185916,
@@ -52,9 +59,12 @@
 				"normalized.volume.10": 0.9516514893877678,
 				"normalized.volume.50": 0.8403464567899914,
 				"strength.close.50": -0.09243895059335325,
-				"trending.up.test1": true,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 87.943618472,
+				"is.trending.up.1": true,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-09-17"
 		},
@@ -66,6 +76,8 @@
 				"value.close.average.10": 78.29000160000001,
 				"value.close.average.50": 76.05340001999998,
 				"value.close.average.20": 82.36350095000002,
+				"value.close.max.5": 78.93,
+				"value.close.min.5": 74.93,
 				"value.volume.average.5": 50083720,
 				"value.volume.average.10": 54806840,
 				"value.volume.average.50": 65463248,
@@ -81,9 +93,12 @@
 				"normalized.volume.10": 0.932053371440499,
 				"normalized.volume.50": 0.780329445309527,
 				"strength.close.50": -1.2641360423897672,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 87.943618472,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-09-18"
 		},
@@ -95,6 +110,8 @@
 				"value.close.average.10": 77.88300160000001,
 				"value.close.average.50": 76.49460003999998,
 				"value.close.average.20": 82.07000115000002,
+				"value.close.max.5": 78.93,
+				"value.close.min.5": 74.93,
 				"value.volume.average.5": 52856380,
 				"value.volume.average.10": 52711260,
 				"value.volume.average.50": 65492694,
@@ -110,9 +127,12 @@
 				"normalized.volume.10": 1.1631670348991847,
 				"normalized.volume.50": 0.9361654904591342,
 				"strength.close.50": 2.817859998612975,
-				"trending.up.test1": true,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 87.943618472,
+				"is.trending.up.1": true,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-09-21"
 		},
@@ -124,6 +144,8 @@
 				"value.close.average.10": 77.7840011,
 				"value.close.average.50": 76.97679997999998,
 				"value.close.average.20": 81.80100090000002,
+				"value.close.max.5": 77.940002,
+				"value.close.min.5": 74.93,
 				"value.volume.average.5": 52490440,
 				"value.volume.average.10": 52820160,
 				"value.volume.average.50": 65458752,
@@ -139,9 +161,12 @@
 				"normalized.volume.10": 1.0610475242786088,
 				"normalized.volume.50": 0.8561834481659534,
 				"strength.close.50": -0.20548830847707877,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": false
+				"value.close.support.61": 87.943618472,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-09-22"
 		},
@@ -153,6 +178,8 @@
 				"value.close.average.10": 77.066001,
 				"value.close.average.50": 77.37700001999998,
 				"value.close.average.20": 81.22000115,
+				"value.close.max.5": 77.940002,
+				"value.close.min.5": 74.730003,
 				"value.volume.average.5": 53277240,
 				"value.volume.average.10": 51636520,
 				"value.volume.average.50": 65207500,
@@ -168,9 +195,12 @@
 				"normalized.volume.10": 0.8197202290162079,
 				"normalized.volume.50": 0.6491201165510102,
 				"strength.close.50": -1.9278828514358008,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 87.943618472,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": true
 			},
 			"interval": "2020-09-23"
 		},
@@ -182,6 +212,8 @@
 				"value.close.average.10": 76.75000070000002,
 				"value.close.average.50": 77.78660001999998,
 				"value.close.average.20": 80.7100013,
+				"value.close.max.5": 77.940002,
+				"value.close.min.5": 74.730003,
 				"value.volume.average.5": 53661600,
 				"value.volume.average.10": 52240670,
 				"value.volume.average.50": 65511112,
@@ -197,9 +229,12 @@
 				"normalized.volume.10": 1.1014579254056274,
 				"normalized.volume.50": 0.8783380138624421,
 				"strength.close.50": 0.9573858000960175,
-				"trending.up.test1": true,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 87.943618472,
+				"is.trending.up.1": true,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-09-24"
 		},
@@ -211,6 +246,8 @@
 				"value.close.average.10": 76.92200089999999,
 				"value.close.average.50": 78.24940001999998,
 				"value.close.average.20": 80.42300105000001,
+				"value.close.max.5": 78.059998,
+				"value.close.min.5": 74.730003,
 				"value.volume.average.5": 53086260,
 				"value.volume.average.10": 51584990,
 				"value.volume.average.50": 65737494,
@@ -226,9 +263,12 @@
 				"normalized.volume.10": 0.9345005204033189,
 				"normalized.volume.50": 0.7333136246416695,
 				"strength.close.50": 1.6426210525700904,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": false
+				"value.close.support.61": 87.943618472,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-09-25"
 		},
@@ -240,6 +280,8 @@
 				"value.close.average.10": 77.08000100000001,
 				"value.close.average.50": 78.73820006,
 				"value.close.average.20": 80.11950104999998,
+				"value.close.max.5": 79.480003,
+				"value.close.min.5": 74.730003,
 				"value.volume.average.5": 50424960,
 				"value.volume.average.10": 51640670,
 				"value.volume.average.50": 66003396,
@@ -255,9 +297,12 @@
 				"normalized.volume.10": 0.9296064516591284,
 				"normalized.volume.50": 0.7273186367562057,
 				"strength.close.50": 1.0327961007869981,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": false
+				"value.close.support.61": 87.943618472,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-09-28"
 		},
@@ -269,6 +314,8 @@
 				"value.close.average.10": 77.36400069999999,
 				"value.close.average.50": 79.22440001999999,
 				"value.close.average.20": 79.66700089999998,
+				"value.close.max.5": 81.769997,
+				"value.close.min.5": 74.730003,
 				"value.volume.average.5": 51529800,
 				"value.volume.average.10": 52010120,
 				"value.volume.average.50": 66334088,
@@ -284,9 +331,12 @@
 				"normalized.volume.10": 1.1837869245446848,
 				"normalized.volume.50": 0.9281638122468797,
 				"strength.close.50": 2.1254895610624875,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 87.943618472,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-09-29"
 		},
@@ -298,6 +348,8 @@
 				"value.close.average.10": 77.8970001,
 				"value.close.average.50": 79.72419997999998,
 				"value.close.average.20": 79.1575008,
+				"value.close.max.5": 81.989998,
+				"value.close.min.5": 75.82,
 				"value.volume.average.5": 53371040,
 				"value.volume.average.10": 53324140,
 				"value.volume.average.50": 66468748,
@@ -313,9 +365,12 @@
 				"normalized.volume.10": 0.9664234622443043,
 				"normalized.volume.50": 0.7753072165583742,
 				"strength.close.50": 0.17056836295005603,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 87.943618472,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-09-30"
 		},
@@ -327,6 +382,8 @@
 				"value.close.average.10": 78.7279999,
 				"value.close.average.50": 80.18559997999999,
 				"value.close.average.20": 78.88950079999998,
+				"value.close.max.5": 84.860001,
+				"value.close.min.5": 78.059998,
 				"value.volume.average.5": 52298280,
 				"value.volume.average.10": 52979940,
 				"value.volume.average.50": 64809102,
@@ -342,9 +399,12 @@
 				"normalized.volume.10": 0.9848463399543299,
 				"normalized.volume.50": 0.8050890752968618,
 				"strength.close.50": 2.310608061369217,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 87.943618472,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-01"
 		},
@@ -356,6 +416,8 @@
 				"value.close.average.10": 79.41500020000001,
 				"value.close.average.50": 80.63020003999999,
 				"value.close.average.20": 78.85250090000001,
+				"value.close.max.5": 84.860001,
+				"value.close.min.5": 79.480003,
 				"value.volume.average.5": 53228060,
 				"value.volume.average.10": 53157160,
 				"value.volume.average.50": 63729622,
@@ -371,9 +433,12 @@
 				"normalized.volume.10": 0.9943176046274858,
 				"normalized.volume.50": 0.8293647183408682,
 				"strength.close.50": -2.5378543793936146,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 87.943618472,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-02"
 		},
@@ -385,6 +450,8 @@
 				"value.close.average.10": 80.2360002,
 				"value.close.average.50": 80.96520003999998,
 				"value.close.average.20": 79.05950090000002,
+				"value.close.max.5": 86.150002,
+				"value.close.min.5": 81.769997,
 				"value.volume.average.5": 53038260,
 				"value.volume.average.10": 51731610,
 				"value.volume.average.50": 60564462,
@@ -400,9 +467,12 @@
 				"normalized.volume.10": 0.9096275951975977,
 				"normalized.volume.50": 0.7769655412773253,
 				"strength.close.50": 3.3797993275908214,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 87.943618472,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-05"
 		},
@@ -414,6 +484,8 @@
 				"value.close.average.10": 80.91400080000001,
 				"value.close.average.50": 81.27540008,
 				"value.close.average.20": 79.34900095,
+				"value.close.max.5": 86.150002,
+				"value.close.min.5": 81.800003,
 				"value.volume.average.5": 51269560,
 				"value.volume.average.10": 51399680,
 				"value.volume.average.50": 59460608,
@@ -429,9 +501,12 @@
 				"normalized.volume.10": 1.0257923784739515,
 				"normalized.volume.50": 0.8867282352713245,
 				"strength.close.50": -1.4808352661748805,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 87.943618472,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-06"
 		},
@@ -443,6 +518,8 @@
 				"value.close.average.10": 82.1100007,
 				"value.close.average.50": 81.65700009999999,
 				"value.close.average.20": 79.58800085,
+				"value.close.max.5": 86.690002,
+				"value.close.min.5": 81.800003,
 				"value.volume.average.5": 49571960,
 				"value.volume.average.10": 51471500,
 				"value.volume.average.50": 58437894,
@@ -458,9 +535,12 @@
 				"normalized.volume.10": 0.8363016426566158,
 				"normalized.volume.50": 0.7366059427124462,
 				"strength.close.50": 1.627898396788571,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 87.943618472,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": true,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-07"
 		},
@@ -472,6 +552,8 @@
 				"value.close.average.10": 83.1790009,
 				"value.close.average.50": 81.86540022,
 				"value.close.average.20": 79.96450080000001,
+				"value.close.max.5": 86.690002,
+				"value.close.min.5": 81.800003,
 				"value.volume.average.5": 49984680,
 				"value.volume.average.10": 51141480,
 				"value.volume.average.50": 56863314,
@@ -487,9 +569,12 @@
 				"normalized.volume.10": 1.060600905566284,
 				"normalized.volume.50": 0.9538786290225716,
 				"strength.close.50": -0.1716981532240694,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 82.121282382,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-08"
 		},
@@ -501,6 +586,8 @@
 				"value.close.average.10": 83.68300090000001,
 				"value.close.average.50": 81.96340023999997,
 				"value.close.average.20": 80.3025009,
+				"value.close.max.5": 86.690002,
+				"value.close.min.5": 83.099998,
 				"value.volume.average.5": 55484540,
 				"value.volume.average.10": 54356300,
 				"value.volume.average.50": 56864664,
@@ -516,9 +603,12 @@
 				"normalized.volume.10": 1.478290464950705,
 				"normalized.volume.50": 1.4130814173104056,
 				"strength.close.50": -4.818613285354154,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": true
+				"value.close.support.61": 82.121282382,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-09"
 		},
@@ -530,6 +620,8 @@
 				"value.close.average.10": 84.1640007,
 				"value.close.average.50": 82.10060026,
 				"value.close.average.20": 80.62200085,
+				"value.close.max.5": 86.690002,
+				"value.close.min.5": 83.099998,
 				"value.volume.average.5": 55607180,
 				"value.volume.average.10": 54322720,
 				"value.volume.average.50": 56384064,
@@ -545,9 +637,12 @@
 				"normalized.volume.10": 0.8775278557480185,
 				"normalized.volume.50": 0.8454463303673889,
 				"strength.close.50": 1.0060836694761877,
-				"trending.up.test1": true,
-				"trending.up.test2": false,
-				"trending.up.test3": true
+				"value.close.support.61": 82.121282382,
+				"is.trending.up.1": true,
+				"is.trending.up.2": false,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-12"
 		},
@@ -559,6 +654,8 @@
 				"value.close.average.10": 84.51500089999999,
 				"value.close.average.50": 82.25280027999999,
 				"value.close.average.20": 80.9395008,
+				"value.close.max.5": 86.690002,
+				"value.close.min.5": 83.099998,
 				"value.volume.average.5": 53614920,
 				"value.volume.average.10": 52442240,
 				"value.volume.average.50": 56386770,
@@ -574,9 +671,12 @@
 				"normalized.volume.10": 0.8154514376197508,
 				"normalized.volume.50": 0.7584066262351966,
 				"strength.close.50": 0.7508210431595921,
-				"trending.up.test1": true,
-				"trending.up.test2": false,
-				"trending.up.test3": true
+				"value.close.support.61": 82.121282382,
+				"is.trending.up.1": true,
+				"is.trending.up.2": false,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-13"
 		},
@@ -588,6 +688,8 @@
 				"value.close.average.10": 84.73700099999999,
 				"value.close.average.50": 82.23620023999997,
 				"value.close.average.20": 81.31700055,
+				"value.close.max.5": 86.510002,
+				"value.close.min.5": 83.099998,
 				"value.volume.average.5": 53095120,
 				"value.volume.average.10": 51333540,
 				"value.volume.average.50": 54082182,
@@ -603,9 +705,12 @@
 				"normalized.volume.10": 0.7879195551290638,
 				"normalized.volume.50": 0.7478747806440206,
 				"strength.close.50": -0.8002260152891075,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": true
+				"value.close.support.61": 82.121282382,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-14"
 		},
@@ -617,6 +722,8 @@
 				"value.close.average.10": 84.5640006,
 				"value.close.average.50": 82.19260021999999,
 				"value.close.average.20": 81.64600025,
+				"value.close.max.5": 85.279999,
+				"value.close.min.5": 83.099998,
 				"value.volume.average.5": 48986260,
 				"value.volume.average.10": 49485470,
 				"value.volume.average.50": 53441364,
@@ -632,9 +739,12 @@
 				"normalized.volume.10": 0.6809352320994425,
 				"normalized.volume.50": 0.6305303135601105,
 				"strength.close.50": -0.6809739997055422,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": true
+				"value.close.support.61": 82.121282382,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-15"
 		},
@@ -646,6 +756,8 @@
 				"value.close.average.10": 84.7010001,
 				"value.close.average.50": 82.1218002,
 				"value.close.average.20": 82.05800015000001,
+				"value.close.max.5": 85.279999,
+				"value.close.min.5": 83.129997,
 				"value.volume.average.5": 39210240,
 				"value.volume.average.10": 47347390,
 				"value.volume.average.50": 52991616,
@@ -661,9 +773,12 @@
 				"normalized.volume.10": 0.6647525872070245,
 				"normalized.volume.50": 0.5939486729372435,
 				"strength.close.50": 0.02375854086616489,
-				"trending.up.test1": true,
-				"trending.up.test2": false,
-				"trending.up.test3": true
+				"value.close.support.61": 82.121282382,
+				"is.trending.up.1": true,
+				"is.trending.up.2": false,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-16"
 		},
@@ -675,6 +790,8 @@
 				"value.close.average.10": 84.28599990000001,
 				"value.close.average.50": 82.06480023999998,
 				"value.close.average.20": 82.26100005,
+				"value.close.max.5": 85.279999,
+				"value.close.min.5": 82,
 				"value.volume.average.5": 37014120,
 				"value.volume.average.10": 46310650,
 				"value.volume.average.50": 52394534,
@@ -690,9 +807,12 @@
 				"normalized.volume.10": 0.7922389342408279,
 				"normalized.volume.50": 0.700246708941051,
 				"strength.close.50": -0.8192872489676165,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": true
+				"value.close.support.61": 82.121282382,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-19"
 		},
@@ -704,6 +824,8 @@
 				"value.close.average.10": 83.99399939999999,
 				"value.close.average.50": 82.05120024,
 				"value.close.average.20": 82.4540001,
+				"value.close.max.5": 84.209999,
+				"value.close.min.5": 81.559998,
 				"value.volume.average.5": 36105180,
 				"value.volume.average.10": 44860050,
 				"value.volume.average.50": 51748200,
@@ -719,9 +841,12 @@
 				"normalized.volume.10": 0.8519696255354151,
 				"normalized.volume.50": 0.7385648196459007,
 				"strength.close.50": -0.32496999777384067,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 82.121282382,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-20"
 		},
@@ -733,6 +858,8 @@
 				"value.close.average.10": 83.2449989,
 				"value.close.average.50": 82.09760023999999,
 				"value.close.average.20": 82.67749979999999,
+				"value.close.max.5": 83.169998,
+				"value.close.min.5": 79.199997,
 				"value.volume.average.5": 35301120,
 				"value.volume.average.10": 44198120,
 				"value.volume.average.50": 50919174,
@@ -748,9 +875,12 @@
 				"normalized.volume.10": 0.8241617516763157,
 				"normalized.volume.50": 0.7153768833720673,
 				"strength.close.50": -1.68829016013496,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 82.121282382,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-21"
 		},
@@ -762,6 +892,8 @@
 				"value.close.average.10": 82.53599849999999,
 				"value.close.average.50": 82.03380018000001,
 				"value.close.average.20": 82.8574997,
+				"value.close.max.5": 83.169998,
+				"value.close.min.5": 79.199997,
 				"value.volume.average.5": 36163200,
 				"value.volume.average.10": 42574730,
 				"value.volume.average.50": 49907154,
@@ -777,9 +909,12 @@
 				"normalized.volume.10": 0.8927079514068557,
 				"normalized.volume.50": 0.7615501376816638,
 				"strength.close.50": 0.16754179184011175,
-				"trending.up.test1": true,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 82.121282382,
+				"is.trending.up.1": true,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-22"
 		},
@@ -791,6 +926,8 @@
 				"value.close.average.10": 82.42199860000001,
 				"value.close.average.50": 82.03620024,
 				"value.close.average.20": 83.05249975000001,
+				"value.close.max.5": 82,
+				"value.close.min.5": 79.199997,
 				"value.volume.average.5": 39179880,
 				"value.volume.average.10": 39195060,
 				"value.volume.average.50": 49690160,
@@ -806,9 +943,12 @@
 				"normalized.volume.10": 1.1878461214244855,
 				"normalized.volume.50": 0.9369601546865617,
 				"strength.close.50": 2.3798797298640118,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": false
+				"value.close.support.61": 82.121282382,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-23"
 		},
@@ -820,6 +960,8 @@
 				"value.close.average.10": 82.2159988,
 				"value.close.average.50": 82.05480024,
 				"value.close.average.20": 83.18999975,
+				"value.close.max.5": 82.230003,
+				"value.close.min.5": 79.199997,
 				"value.volume.average.5": 45726800,
 				"value.volume.average.10": 41370460,
 				"value.volume.average.50": 50230844,
@@ -835,9 +977,12 @@
 				"normalized.volume.10": 1.6780983339319893,
 				"normalized.volume.50": 1.3820930422749815,
 				"strength.close.50": 0.3731706497864143,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": false
+				"value.close.support.61": 82.121282382,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": false,
+				"is.close.max.5": true,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-26"
 		},
@@ -849,6 +994,8 @@
 				"value.close.average.10": 81.5759986,
 				"value.close.average.50": 81.98400022000001,
 				"value.close.average.20": 83.04549974999999,
+				"value.close.max.5": 82.230003,
+				"value.close.min.5": 78.879997,
 				"value.volume.average.5": 69416820,
 				"value.volume.average.10": 52761000,
 				"value.volume.average.50": 52735230,
@@ -864,9 +1011,12 @@
 				"normalized.volume.10": 2.9694186994181306,
 				"normalized.volume.50": 2.970869758224246,
 				"strength.close.50": -9.952431515269755,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 79.365003,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-27"
 		},
@@ -878,6 +1028,8 @@
 				"value.close.average.10": 80.79499890000001,
 				"value.close.average.50": 81.87880018000001,
 				"value.close.average.20": 82.76599995,
+				"value.close.max.5": 82.230003,
+				"value.close.min.5": 76.400002,
 				"value.volume.average.5": 77437520,
 				"value.volume.average.10": 56369320,
 				"value.volume.average.50": 53646418,
@@ -893,9 +1045,12 @@
 				"normalized.volume.10": 1.3576516445470692,
 				"normalized.volume.50": 1.4265612291206469,
 				"strength.close.50": -3.537864715413062,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 79.365003,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-28"
 		},
@@ -907,6 +1062,8 @@
 				"value.close.average.10": 80.2839989,
 				"value.close.average.50": 81.81740020000001,
 				"value.close.average.20": 82.42399975,
+				"value.close.max.5": 82.230003,
+				"value.close.min.5": 76.400002,
 				"value.volume.average.5": 80392980,
 				"value.volume.average.10": 58278090,
 				"value.volume.average.50": 53951952,
@@ -922,9 +1079,12 @@
 				"normalized.volume.10": 0.9057280360423617,
 				"normalized.volume.50": 0.9783538508486217,
 				"strength.close.50": 1.5849283466055157,
-				"trending.up.test1": true,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 79.365003,
+				"is.trending.up.1": true,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-29"
 		},
@@ -936,6 +1096,8 @@
 				"value.close.average.10": 79.4959992,
 				"value.close.average.50": 81.66780028,
 				"value.close.average.20": 82.09849965000001,
+				"value.close.max.5": 82.230003,
+				"value.close.min.5": 75.290001,
 				"value.volume.average.5": 81351240,
 				"value.volume.average.10": 60265560,
 				"value.volume.average.50": 54119954,
@@ -951,9 +1113,12 @@
 				"normalized.volume.10": 0.8520455132251322,
 				"normalized.volume.50": 0.948799771707123,
 				"strength.close.50": -2.590219581561359,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 79.365003,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-10-30"
 		},
@@ -965,6 +1130,8 @@
 				"value.close.average.10": 78.7659989,
 				"value.close.average.50": 81.48560026,
 				"value.close.average.20": 81.5259994,
+				"value.close.max.5": 78.879997,
+				"value.close.min.5": 74.699997,
 				"value.volume.average.5": 76618640,
 				"value.volume.average.10": 61172720,
 				"value.volume.average.50": 54069562,
@@ -980,9 +1147,12 @@
 				"normalized.volume.10": 0.7480573039747129,
 				"normalized.volume.50": 0.8463301404217034,
 				"strength.close.50": -0.49933816816937304,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 79.365003,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": true
 			},
 			"interval": "2020-11-02"
 		},
@@ -994,6 +1164,8 @@
 				"value.close.average.10": 78.26799930000001,
 				"value.close.average.50": 81.35560026,
 				"value.close.average.20": 81.13099935,
+				"value.close.max.5": 78.019997,
+				"value.close.min.5": 74.699997,
 				"value.volume.average.5": 53531100,
 				"value.volume.average.10": 61473960,
 				"value.volume.average.50": 54133476,
@@ -1009,9 +1181,12 @@
 				"normalized.volume.10": 0.6707197649216026,
 				"normalized.volume.50": 0.7616691749112878,
 				"strength.close.50": 1.4319418571790934,
-				"trending.up.test1": true,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 79.365003,
+				"is.trending.up.1": true,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-03"
 		},
@@ -1023,6 +1198,8 @@
 				"value.close.average.10": 78.4829994,
 				"value.close.average.50": 81.25560026,
 				"value.close.average.20": 80.86399915,
+				"value.close.max.5": 81.349998,
+				"value.close.min.5": 74.699997,
 				"value.volume.average.5": 51541060,
 				"value.volume.average.10": 64489290,
 				"value.volume.average.50": 54480382,
@@ -1038,9 +1215,12 @@
 				"normalized.volume.10": 1.032414839735404,
 				"normalized.volume.50": 1.2220857775923817,
 				"strength.close.50": 5.829344270772558,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": false
+				"value.close.support.61": 79.365003,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-04"
 		},
@@ -1052,6 +1232,8 @@
 				"value.close.average.10": 78.8409996,
 				"value.close.average.50": 81.19520032,
 				"value.close.average.20": 80.68849904999999,
+				"value.close.max.5": 83,
+				"value.close.min.5": 74.699997,
 				"value.volume.average.5": 50292700,
 				"value.volume.average.10": 65342840,
 				"value.volume.average.50": 54468082,
@@ -1067,9 +1249,12 @@
 				"normalized.volume.10": 0.7122784990673806,
 				"normalized.volume.50": 0.8544875877949952,
 				"strength.close.50": 1.4099062288369182,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 79.365003,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-05"
 		},
@@ -1081,6 +1266,8 @@
 				"value.close.average.10": 79.23299940000001,
 				"value.close.average.50": 81.2368002,
 				"value.close.average.20": 80.827499,
+				"value.close.max.5": 85.879997,
+				"value.close.min.5": 74.699997,
 				"value.volume.average.5": 50788880,
 				"value.volume.average.10": 66070060,
 				"value.volume.average.50": 54700796,
@@ -1096,9 +1283,12 @@
 				"normalized.volume.10": 0.8147396869323261,
 				"normalized.volume.50": 0.9840789154146861,
 				"strength.close.50": 2.8341443241575526,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 79.365003,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": true,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-06"
 		},
@@ -1110,6 +1300,8 @@
 				"value.close.average.10": 79.32199940000001,
 				"value.close.average.50": 81.1882002,
 				"value.close.average.20": 80.7689991,
+				"value.close.max.5": 85.879997,
+				"value.close.min.5": 76.580002,
 				"value.volume.average.5": 53352880,
 				"value.volume.average.10": 64985760,
 				"value.volume.average.50": 55057944,
@@ -1125,9 +1317,12 @@
 				"normalized.volume.10": 0.9014390229490276,
 				"normalized.volume.50": 1.0639827015698224,
 				"strength.close.50": -2.936585872436507,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-09"
 		},
@@ -1139,6 +1334,8 @@
 				"value.close.average.10": 79.2329995,
 				"value.close.average.50": 80.93160016,
 				"value.close.average.20": 80.40449905,
+				"value.close.max.5": 85.879997,
+				"value.close.min.5": 77.989998,
 				"value.volume.average.5": 58533960,
 				"value.volume.average.10": 56032530,
 				"value.volume.average.50": 54587570,
@@ -1154,9 +1351,12 @@
 				"normalized.volume.10": 1.1981825557403887,
 				"normalized.volume.50": 1.2298990411187016,
 				"strength.close.50": -6.309388230434141,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-10"
 		},
@@ -1168,6 +1368,8 @@
 				"value.close.average.10": 79.7209992,
 				"value.close.average.50": 80.71360014000001,
 				"value.close.average.20": 80.25799905,
+				"value.close.max.5": 85.879997,
+				"value.close.min.5": 77.989998,
 				"value.volume.average.5": 54140280,
 				"value.volume.average.10": 52840670,
 				"value.volume.average.50": 54357454,
@@ -1183,9 +1385,12 @@
 				"normalized.volume.10": 0.8442606802676802,
 				"normalized.volume.50": 0.8207025295923536,
 				"strength.close.50": 2.700112143061376,
-				"trending.up.test1": true,
-				"trending.up.test2": false,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": true,
+				"is.trending.up.2": false,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-11"
 		},
@@ -1197,6 +1402,8 @@
 				"value.close.average.10": 80.1029991,
 				"value.close.average.50": 80.54600004,
 				"value.close.average.20": 80.19349899999999,
+				"value.close.max.5": 85.879997,
+				"value.close.min.5": 77.989998,
 				"value.volume.average.5": 52280340,
 				"value.volume.average.10": 51286520,
 				"value.volume.average.50": 54094968,
@@ -1212,9 +1419,12 @@
 				"normalized.volume.10": 0.7261674217708669,
 				"normalized.volume.50": 0.6884669938246382,
 				"strength.close.50": 0.3855394511408129,
-				"trending.up.test1": true,
-				"trending.up.test2": false,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": true,
+				"is.trending.up.2": false,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-12"
 		},
@@ -1226,6 +1436,8 @@
 				"value.close.average.10": 80.71699900000002,
 				"value.close.average.50": 80.52380002000001,
 				"value.close.average.20": 80.10649910000001,
+				"value.close.max.5": 83.120003,
+				"value.close.min.5": 77.989998,
 				"value.volume.average.5": 47599000,
 				"value.volume.average.10": 49193940,
 				"value.volume.average.50": 52954178,
@@ -1241,9 +1453,12 @@
 				"normalized.volume.10": 0.6184338965327844,
 				"normalized.volume.50": 0.5745193514287013,
 				"strength.close.50": -0.2355506360083575,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-13"
 		},
@@ -1255,6 +1470,8 @@
 				"value.close.average.10": 81.61999960000001,
 				"value.close.average.50": 80.55820004000002,
 				"value.close.average.20": 80.19299925,
+				"value.close.max.5": 83.730003,
+				"value.close.min.5": 77.989998,
 				"value.volume.average.5": 43611020,
 				"value.volume.average.10": 48481950,
 				"value.volume.average.50": 52081638,
@@ -1270,9 +1487,12 @@
 				"normalized.volume.10": 0.7970141465019456,
 				"normalized.volume.50": 0.7419275100372227,
 				"strength.close.50": 1.7064354988681345,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-16"
 		},
@@ -1284,6 +1504,8 @@
 				"value.close.average.10": 82.2979995,
 				"value.close.average.50": 80.65160002000002,
 				"value.close.average.20": 80.28299940000001,
+				"value.close.max.5": 83.730003,
+				"value.close.min.5": 81.279999,
 				"value.volume.average.5": 36078280,
 				"value.volume.average.10": 47306120,
 				"value.volume.average.50": 51571994,
@@ -1299,9 +1521,12 @@
 				"normalized.volume.10": 0.6230377803125684,
 				"normalized.volume.50": 0.5715020443072262,
 				"strength.close.50": -0.21145689939776202,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-17"
 		},
@@ -1313,6 +1538,8 @@
 				"value.close.average.10": 82.4169998,
 				"value.close.average.50": 80.66419996,
 				"value.close.average.20": 80.4499996,
+				"value.close.max.5": 83.730003,
+				"value.close.min.5": 81.43,
 				"value.volume.average.5": 33149620,
 				"value.volume.average.10": 43644950,
 				"value.volume.average.50": 51088076,
@@ -1328,9 +1555,12 @@
 				"normalized.volume.10": 0.6866315576028842,
 				"normalized.volume.50": 0.5865948054101705,
 				"strength.close.50": -0.4810077404363358,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-18"
 		},
@@ -1342,6 +1572,8 @@
 				"value.close.average.10": 82.6709999,
 				"value.close.average.50": 80.79539992000001,
 				"value.close.average.20": 80.75599975000002,
+				"value.close.max.5": 85.540001,
+				"value.close.min.5": 81.43,
 				"value.volume.average.5": 35724460,
 				"value.volume.average.10": 44002400,
 				"value.volume.average.50": 51060424,
@@ -1357,9 +1589,12 @@
 				"normalized.volume.10": 1.1389560569423487,
 				"normalized.volume.50": 0.9815194640765224,
 				"strength.close.50": 2.944558392229567,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-19"
 		},
@@ -1371,6 +1606,8 @@
 				"value.close.average.10": 82.54700009999999,
 				"value.close.average.50": 80.96139998000001,
 				"value.close.average.20": 80.88999975,
+				"value.close.max.5": 85.540001,
+				"value.close.min.5": 82.540001,
 				"value.volume.average.5": 36641500,
 				"value.volume.average.10": 42120250,
 				"value.volume.average.50": 50665332,
@@ -1386,9 +1623,12 @@
 				"normalized.volume.10": 0.831153661243701,
 				"normalized.volume.50": 0.69097346485364,
 				"strength.close.50": -0.6218775003152062,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-20"
 		},
@@ -1400,6 +1640,8 @@
 				"value.close.average.10": 82.76599959999999,
 				"value.close.average.50": 81.1095999,
 				"value.close.average.20": 81.04399950000001,
+				"value.close.max.5": 85.540001,
+				"value.close.min.5": 82.540001,
 				"value.volume.average.5": 38214340,
 				"value.volume.average.10": 40912680,
 				"value.volume.average.50": 50646458,
@@ -1415,9 +1657,12 @@
 				"normalized.volume.10": 1.1366891633596234,
 				"normalized.volume.50": 0.9182280822086315,
 				"strength.close.50": 0.6152118968516918,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-23"
 		},
@@ -1429,6 +1674,8 @@
 				"value.close.average.10": 83.4739998,
 				"value.close.average.50": 81.2323999,
 				"value.close.average.20": 81.35349965,
+				"value.close.max.5": 85.540001,
+				"value.close.min.5": 82.540001,
 				"value.volume.average.5": 39687480,
 				"value.volume.average.10": 37882880,
 				"value.volume.average.50": 50225754,
@@ -1444,9 +1691,12 @@
 				"normalized.volume.10": 0.9724498243005811,
 				"normalized.volume.50": 0.7334723138252937,
 				"strength.close.50": -0.17603188837344277,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-24"
 		},
@@ -1458,6 +1708,8 @@
 				"value.close.average.10": 84.0169998,
 				"value.close.average.50": 81.4333998,
 				"value.close.average.20": 81.8689995,
+				"value.close.max.5": 86.709999,
+				"value.close.min.5": 84.639999,
 				"value.volume.average.5": 41963820,
 				"value.volume.average.10": 37556720,
 				"value.volume.average.50": 50284878,
@@ -1473,9 +1725,12 @@
 				"normalized.volume.10": 1.1009933774834437,
 				"normalized.volume.50": 0.8223088460113197,
 				"strength.close.50": 1.3485856851497209,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-25"
 		},
@@ -1487,6 +1742,8 @@
 				"value.close.average.10": 84.55200040000001,
 				"value.close.average.50": 81.64619978,
 				"value.close.average.20": 82.32749974999999,
+				"value.close.max.5": 87.190002,
+				"value.close.min.5": 84.639999,
 				"value.volume.average.5": 36483980,
 				"value.volume.average.10": 36104220,
 				"value.volume.average.50": 49626848,
@@ -1502,9 +1759,12 @@
 				"normalized.volume.10": 0.6292228443101665,
 				"normalized.volume.50": 0.4577683434579605,
 				"strength.close.50": 0.2197301781648563,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-27"
 		},
@@ -1516,6 +1776,8 @@
 				"value.close.average.10": 85.67500079999999,
 				"value.close.average.50": 82.00079986,
 				"value.close.average.20": 83.1959999,
+				"value.close.max.5": 92.660004,
+				"value.close.min.5": 85.07,
 				"value.volume.average.5": 46378900,
 				"value.volume.average.10": 41510200,
 				"value.volume.average.50": 50294850,
@@ -1531,9 +1793,12 @@
 				"normalized.volume.10": 2.035234713395744,
 				"normalized.volume.50": 1.6797544877855288,
 				"strength.close.50": 9.188260407695807,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-11-30"
 		},
@@ -1545,6 +1810,8 @@
 				"value.close.average.10": 86.5650002,
 				"value.close.average.50": 82.29459976,
 				"value.close.average.20": 84.0924999,
+				"value.close.max.5": 92.660004,
+				"value.close.min.5": 85.07,
 				"value.volume.average.5": 48812000,
 				"value.volume.average.10": 43513170,
 				"value.volume.average.50": 50242020,
@@ -1560,9 +1827,12 @@
 				"normalized.volume.10": 1.3483389052096182,
 				"normalized.volume.50": 1.167757586179855,
 				"strength.close.50": -0.03504090188849619,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-01"
 		},
@@ -1574,6 +1844,8 @@
 				"value.close.average.10": 87.6029999,
 				"value.close.average.50": 82.61539977999999,
 				"value.close.average.20": 84.9504997,
+				"value.close.max.5": 93.739998,
+				"value.close.min.5": 86.709999,
 				"value.volume.average.5": 53041920,
 				"value.volume.average.10": 46364700,
 				"value.volume.average.50": 50280902,
@@ -1589,9 +1861,12 @@
 				"normalized.volume.10": 1.2507101307675883,
 				"normalized.volume.50": 1.1532967328231303,
 				"strength.close.50": 1.280160526730404,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-02"
 		},
@@ -1603,6 +1878,8 @@
 				"value.close.average.10": 88.5799996,
 				"value.close.average.50": 82.96699967999999,
 				"value.close.average.20": 85.4984997,
+				"value.close.max.5": 93.739998,
+				"value.close.min.5": 87.190002,
 				"value.volume.average.5": 51943920,
 				"value.volume.average.10": 46953870,
 				"value.volume.average.50": 50151546,
@@ -1618,9 +1895,12 @@
 				"normalized.volume.10": 0.7637219253705818,
 				"normalized.volume.50": 0.7150268109381912,
 				"strength.close.50": -1.0224883396416182,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-03"
 		},
@@ -1632,6 +1912,8 @@
 				"value.close.average.10": 89.42999959999999,
 				"value.close.average.50": 83.3313997,
 				"value.close.average.20": 86.05049975,
+				"value.close.max.5": 94.040001,
+				"value.close.min.5": 92.309998,
 				"value.volume.average.5": 56514460,
 				"value.volume.average.10": 46499220,
 				"value.volume.average.50": 49912134,
@@ -1647,9 +1929,12 @@
 				"normalized.volume.10": 0.9800228907065538,
 				"normalized.volume.50": 0.9130104515266768,
 				"strength.close.50": 1.5795108201725152,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-04"
 		},
@@ -1661,6 +1946,8 @@
 				"value.close.average.10": 90.3729997,
 				"value.close.average.50": 83.65159974,
 				"value.close.average.20": 86.45999989999999,
+				"value.close.max.5": 94.07,
+				"value.close.min.5": 92.309998,
 				"value.volume.average.5": 47581000,
 				"value.volume.average.10": 46979950,
 				"value.volume.average.50": 49744324,
@@ -1676,9 +1963,12 @@
 				"normalized.volume.10": 0.8475040948319442,
 				"normalized.volume.50": 0.8004068966742819,
 				"strength.close.50": 0.02401140649332334,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-07"
 		},
@@ -1690,6 +1980,8 @@
 				"value.close.average.10": 91.13399969999999,
 				"value.close.average.50": 83.92039964000001,
 				"value.close.average.20": 86.94999965,
+				"value.close.max.5": 94.07,
+				"value.close.min.5": 92.309998,
 				"value.volume.average.5": 42628400,
 				"value.volume.average.10": 45720200,
 				"value.volume.average.50": 49462364,
@@ -1705,9 +1997,12 @@
 				"normalized.volume.10": 0.7416306140393086,
 				"normalized.volume.50": 0.685521217708074,
 				"strength.close.50": -0.7883507714067112,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-08"
 		},
@@ -1719,6 +2014,8 @@
 				"value.close.average.10": 91.6099999,
 				"value.close.average.50": 84.08159974,
 				"value.close.average.20": 87.54199985,
+				"value.close.max.5": 94.07,
+				"value.close.min.5": 89.830002,
 				"value.volume.average.5": 41464720,
 				"value.volume.average.10": 47253320,
 				"value.volume.average.50": 49274394,
@@ -1734,9 +2031,12 @@
 				"normalized.volume.10": 1.104057873605495,
 				"normalized.volume.50": 1.0587730414299972,
 				"strength.close.50": -3.2716044629265397,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": true
 			},
 			"interval": "2020-12-09"
 		},
@@ -1748,6 +2048,8 @@
 				"value.close.average.10": 92.10500040000001,
 				"value.close.average.50": 84.27499986000001,
 				"value.close.average.20": 88.0610001,
+				"value.close.max.5": 94.07,
+				"value.close.min.5": 89.830002,
 				"value.volume.average.5": 41053660,
 				"value.volume.average.10": 46498790,
 				"value.volume.average.50": 48919808,
@@ -1763,9 +2065,12 @@
 				"normalized.volume.10": 0.7269952615971297,
 				"normalized.volume.50": 0.691016612330122,
 				"strength.close.50": 1.2645617825973532,
-				"trending.up.test1": true,
-				"trending.up.test2": false,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": true,
+				"is.trending.up.2": false,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-10"
 		},
@@ -1777,6 +2082,8 @@
 				"value.close.average.10": 92.55100039999999,
 				"value.close.average.50": 84.41079988000001,
 				"value.close.average.20": 88.55150040000001,
+				"value.close.max.5": 94.07,
+				"value.close.min.5": 89.830002,
 				"value.volume.average.5": 37613220,
 				"value.volume.average.10": 47063840,
 				"value.volume.average.50": 48443628,
@@ -1792,9 +2099,12 @@
 				"normalized.volume.10": 0.6027578710109502,
 				"normalized.volume.50": 0.585589914941961,
 				"strength.close.50": -0.005857070329249533,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-11"
 		},
@@ -1806,6 +2116,8 @@
 				"value.close.average.10": 92.7629999,
 				"value.close.average.50": 84.6703998,
 				"value.close.average.20": 89.21900035000002,
+				"value.close.max.5": 94.779999,
+				"value.close.min.5": 89.830002,
 				"value.volume.average.5": 39255360,
 				"value.volume.average.10": 43418180,
 				"value.volume.average.50": 48347054,
@@ -1821,9 +2133,12 @@
 				"normalized.volume.10": 1.1061357247125514,
 				"normalized.volume.50": 0.9933676620709919,
 				"strength.close.50": 3.1092378021792215,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-14"
 		},
@@ -1835,6 +2150,8 @@
 				"value.close.average.10": 93.21200049999999,
 				"value.close.average.50": 84.88979982,
 				"value.close.average.20": 89.88850035000002,
+				"value.close.max.5": 97.120003,
+				"value.close.min.5": 89.830002,
 				"value.volume.average.5": 43934880,
 				"value.volume.average.10": 43281640,
 				"value.volume.average.50": 48552026,
@@ -1850,9 +2167,12 @@
 				"normalized.volume.10": 1.32400482051974,
 				"normalized.volume.50": 1.180282363500135,
 				"strength.close.50": 2.761865451719762,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 81.60923700000001,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": true,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-15"
 		},
@@ -1864,6 +2184,8 @@
 				"value.close.average.10": 93.5230005,
 				"value.close.average.50": 85.13719971999998,
 				"value.close.average.20": 90.5630002,
+				"value.close.max.5": 97.120003,
+				"value.close.min.5": 91.650002,
 				"value.volume.average.5": 40482600,
 				"value.volume.average.10": 40973660,
 				"value.volume.average.50": 48195698,
@@ -1879,9 +2201,12 @@
 				"normalized.volume.10": 0.8519863736849479,
 				"normalized.volume.50": 0.7243177596473445,
 				"strength.close.50": -0.1955694166935795,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 94.33522261799999,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-16"
 		},
@@ -1893,6 +2218,8 @@
 				"value.close.average.10": 93.97600030000001,
 				"value.close.average.50": 85.34019959999998,
 				"value.close.average.20": 91.27799995000001,
+				"value.close.max.5": 97.120003,
+				"value.close.min.5": 91.650002,
 				"value.volume.average.5": 40126460,
 				"value.volume.average.10": 40590060,
 				"value.volume.average.50": 47975258,
@@ -1908,9 +2235,12 @@
 				"normalized.volume.10": 0.788954241506418,
 				"normalized.volume.50": 0.6675044874172433,
 				"strength.close.50": -0.006676379883147312,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 94.33522261799999,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-17"
 		},
@@ -1922,6 +2252,8 @@
 				"value.close.average.10": 94.164,
 				"value.close.average.50": 85.52839952000001,
 				"value.close.average.20": 91.79699980000001,
+				"value.close.max.5": 97.120003,
+				"value.close.min.5": 94.779999,
 				"value.volume.average.5": 44817460,
 				"value.volume.average.10": 41215340,
 				"value.volume.average.50": 47926906,
@@ -1937,9 +2269,12 @@
 				"normalized.volume.10": 1.257374074798364,
 				"normalized.volume.50": 1.0812945029249332,
 				"strength.close.50": -0.9947887801019246,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 94.33522261799999,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-18"
 		},
@@ -1951,6 +2286,8 @@
 				"value.close.average.10": 94.08000030000001,
 				"value.close.average.50": 85.73099962,
 				"value.close.average.20": 92.2265,
+				"value.close.max.5": 97.120003,
+				"value.close.min.5": 93.230003,
 				"value.volume.average.5": 44630960,
 				"value.volume.average.10": 41943160,
 				"value.volume.average.50": 47261696,
@@ -1966,9 +2303,12 @@
 				"normalized.volume.10": 1.1228028598703579,
 				"normalized.volume.50": 0.9964496407407809,
 				"strength.close.50": -2.6804445513445074,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": true
+				"value.close.support.61": 94.33522261799999,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-21"
 		},
@@ -1980,6 +2320,8 @@
 				"value.close.average.10": 94.10400089999999,
 				"value.close.average.50": 85.90839968,
 				"value.close.average.20": 92.61900030000001,
+				"value.close.max.5": 96.849998,
+				"value.close.min.5": 93.160004,
 				"value.volume.average.5": 40304680,
 				"value.volume.average.10": 42119780,
 				"value.volume.average.50": 47021776,
@@ -1995,9 +2337,12 @@
 				"normalized.volume.10": 0.8469583649297313,
 				"normalized.volume.50": 0.7586633903406796,
 				"strength.close.50": -0.05310567866045397,
-				"trending.up.test1": true,
-				"trending.up.test2": false,
-				"trending.up.test3": true
+				"value.close.support.61": 94.33522261799999,
+				"is.trending.up.1": true,
+				"is.trending.up.2": false,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-22"
 		},
@@ -2009,6 +2354,8 @@
 				"value.close.average.10": 94.276001,
 				"value.close.average.50": 86.03379976000001,
 				"value.close.average.20": 92.94300045,
+				"value.close.max.5": 96.839996,
+				"value.close.min.5": 91.550003,
 				"value.volume.average.5": 38521540,
 				"value.volume.average.10": 39502070,
 				"value.volume.average.50": 46686360,
@@ -2024,9 +2371,12 @@
 				"normalized.volume.10": 0.6580237440721461,
 				"normalized.volume.50": 0.5567643311665335,
 				"strength.close.50": -0.8963911299424483,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 94.33522261799999,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-23"
 		},
@@ -2038,6 +2388,8 @@
 				"value.close.average.10": 94.29100039999999,
 				"value.close.average.50": 86.18579974000001,
 				"value.close.average.20": 93.1980004,
+				"value.close.max.5": 95.919998,
+				"value.close.min.5": 91.550003,
 				"value.volume.average.5": 35457980,
 				"value.volume.average.10": 37792220,
 				"value.volume.average.50": 46211544,
@@ -2053,9 +2405,12 @@
 				"normalized.volume.10": 0.442046008411255,
 				"normalized.volume.50": 0.3615092367396337,
 				"strength.close.50": 0.0939905940061172,
-				"trending.up.test1": true,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 94.33522261799999,
+				"is.trending.up.1": true,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-24"
 		},
@@ -2067,6 +2422,8 @@
 				"value.close.average.10": 94.286,
 				"value.close.average.50": 86.35519975999999,
 				"value.close.average.20": 93.4185002,
+				"value.close.max.5": 93.230003,
+				"value.close.min.5": 91.550003,
 				"value.volume.average.5": 31218820,
 				"value.volume.average.10": 38018140,
 				"value.volume.average.50": 46150162,
@@ -2082,9 +2439,12 @@
 				"normalized.volume.10": 0.805597012373567,
 				"normalized.volume.50": 0.663644474314088,
 				"strength.close.50": -0.13936533960595435,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 94.33522261799999,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-28"
 		},
@@ -2096,6 +2456,8 @@
 				"value.close.average.10": 93.8700004,
 				"value.close.average.50": 86.50419985999999,
 				"value.close.average.20": 93.31650015,
+				"value.close.max.5": 93.160004,
+				"value.close.min.5": 90.620003,
 				"value.volume.average.5": 28149680,
 				"value.volume.average.10": 36390320,
 				"value.volume.average.50": 46155640,
@@ -2111,9 +2473,12 @@
 				"normalized.volume.10": 0.8724353069717441,
 				"normalized.volume.50": 0.6878509321937687,
 				"strength.close.50": -0.6740904742952339,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 94.33522261799999,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-29"
 		},
@@ -2125,6 +2490,8 @@
 				"value.close.average.10": 93.3870002,
 				"value.close.average.50": 86.70999988,
 				"value.close.average.20": 93.29950034999999,
+				"value.close.max.5": 92.290001,
+				"value.close.min.5": 90.620003,
 				"value.volume.average.5": 26183940,
 				"value.volume.average.10": 33244310,
 				"value.volume.average.50": 45938758,
@@ -2140,9 +2507,12 @@
 				"normalized.volume.10": 0.7774262723455533,
 				"normalized.volume.50": 0.5625968381644101,
 				"strength.close.50": 0.9395355945408923,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": false
+				"value.close.support.61": 94.33522261799999,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-30"
 		},
@@ -2154,6 +2524,8 @@
 				"value.close.average.10": 92.8730003,
 				"value.close.average.50": 86.91299989999999,
 				"value.close.average.20": 93.19800039999998,
+				"value.close.max.5": 92.290001,
+				"value.close.min.5": 90.620003,
 				"value.volume.average.5": 25969380,
 				"value.volume.average.10": 32245460,
 				"value.volume.average.50": 45672780,
@@ -2169,9 +2541,12 @@
 				"normalized.volume.10": 0.7728374785163555,
 				"normalized.volume.50": 0.5456313366517213,
 				"strength.close.50": -0.3164672665206757,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": false
+				"value.close.support.61": 94.33522261799999,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2020-12-31"
 		},
@@ -2183,6 +2558,8 @@
 				"value.close.average.10": 92.41900100000001,
 				"value.close.average.50": 87.17500001999998,
 				"value.close.average.20": 93.19750065000001,
+				"value.close.max.5": 92.300003,
+				"value.close.min.5": 90.620003,
 				"value.volume.average.5": 32988720,
 				"value.volume.average.10": 34223350,
 				"value.volume.average.50": 45980304,
@@ -2198,9 +2575,12 @@
 				"normalized.volume.10": 1.5136624556041416,
 				"normalized.volume.50": 1.1266258700681926,
 				"strength.close.50": 0.6647137698437223,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": false
+				"value.close.support.61": 94.33522261799999,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-01-04"
 		},
@@ -2212,6 +2592,8 @@
 				"value.close.average.10": 92.10400089999999,
 				"value.close.average.50": 87.44200000000001,
 				"value.close.average.20": 93.13400045,
+				"value.close.max.5": 92.769997,
+				"value.close.min.5": 90.620003,
 				"value.volume.average.5": 33704860,
 				"value.volume.average.10": 32461840,
 				"value.volume.average.50": 45904328,
@@ -2227,9 +2609,12 @@
 				"normalized.volume.10": 1.053791159096342,
 				"normalized.volume.50": 0.7452020646070671,
 				"strength.close.50": 0.3502404991529337,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": false
+				"value.close.support.61": 94.33522261799999,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-01-05"
 		},
@@ -2241,6 +2626,8 @@
 				"value.close.average.10": 91.8140008,
 				"value.close.average.50": 87.60940006000001,
 				"value.close.average.20": 92.94700055000001,
+				"value.close.max.5": 92.769997,
+				"value.close.min.5": 90.330002,
 				"value.volume.average.5": 37737560,
 				"value.volume.average.10": 32943620,
 				"value.volume.average.50": 46011408,
@@ -2256,9 +2643,12 @@
 				"normalized.volume.10": 1.5757740041926176,
 				"normalized.volume.50": 1.1282354150083822,
 				"strength.close.50": -2.752888771443389,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 94.33522261799999,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": true
 			},
 			"interval": "2021-01-06"
 		},
@@ -2270,6 +2660,8 @@
 				"value.close.average.10": 92.01400079999999,
 				"value.close.average.50": 87.86800008000002,
 				"value.close.average.20": 93.05900084999999,
+				"value.close.max.5": 95.160004,
+				"value.close.min.5": 90.330002,
 				"value.volume.average.5": 41148000,
 				"value.volume.average.10": 33665970,
 				"value.volume.average.50": 45480878,
@@ -2285,9 +2677,12 @@
 				"normalized.volume.10": 1.2742006245475772,
 				"normalized.volume.50": 0.9431919937869273,
 				"strength.close.50": 4.555619216374853,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 94.33522261799999,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-01-07"
 		},
@@ -2299,6 +2694,8 @@
 				"value.close.average.10": 92.3170007,
 				"value.close.average.50": 88.18200017999999,
 				"value.close.average.20": 93.29650085,
+				"value.close.max.5": 95.160004,
+				"value.close.min.5": 90.330002,
 				"value.volume.average.5": 44117020,
 				"value.volume.average.10": 35043200,
 				"value.volume.average.50": 43142800,
@@ -2314,9 +2711,12 @@
 				"normalized.volume.10": 1.1347593827047757,
 				"normalized.volume.50": 0.9217204261197697,
 				"strength.close.50": -0.5345996905903255,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 94.33522261799999,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-01-08"
 		},
@@ -2328,6 +2728,8 @@
 				"value.close.average.10": 92.8610009,
 				"value.close.average.50": 88.59900013999999,
 				"value.close.average.20": 93.57600065,
+				"value.close.max.5": 97.25,
+				"value.close.min.5": 90.330002,
 				"value.volume.average.5": 43490320,
 				"value.volume.average.10": 38239520,
 				"value.volume.average.50": 42585584,
@@ -2343,9 +2745,12 @@
 				"normalized.volume.10": 1.272743486319912,
 				"normalized.volume.50": 1.142853882196379,
 				"strength.close.50": 3.051417579756575,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 94.33522261799999,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": true,
+				"is.close.min.5": false
 			},
 			"interval": "2021-01-11"
 		},
@@ -2357,6 +2762,8 @@
 				"value.close.average.10": 93.2370012,
 				"value.close.average.50": 88.94580021999998,
 				"value.close.average.20": 93.7615006,
+				"value.close.max.5": 97.25,
+				"value.close.min.5": 90.330002,
 				"value.volume.average.5": 50183180,
 				"value.volume.average.10": 41944020,
 				"value.volume.average.50": 42883348,
@@ -2372,9 +2779,12 @@
 				"normalized.volume.10": 1.6133956640302956,
 				"normalized.volume.50": 1.5780554260828703,
 				"strength.close.50": -2.9825231772412035,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 94.606560764,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-01-12"
 		},
@@ -2386,6 +2796,8 @@
 				"value.close.average.10": 93.35300079999999,
 				"value.close.average.50": 89.27560018,
 				"value.close.average.20": 93.6115006,
+				"value.close.max.5": 97.25,
+				"value.close.min.5": 91.779999,
 				"value.volume.average.5": 51943420,
 				"value.volume.average.10": 44840490,
 				"value.volume.average.50": 43070626,
@@ -2401,9 +2813,12 @@
 				"normalized.volume.10": 1.3539749454120595,
 				"normalized.volume.50": 1.409612667343168,
 				"strength.close.50": -5.046416168313867,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 94.606560764,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-01-13"
 		},
@@ -2415,6 +2830,8 @@
 				"value.close.average.10": 93.2030008,
 				"value.close.average.50": 89.59740026000001,
 				"value.close.average.20": 93.29500050000001,
+				"value.close.max.5": 97.25,
+				"value.close.min.5": 90.790001,
 				"value.volume.average.5": 54045620,
 				"value.volume.average.10": 47596810,
 				"value.volume.average.50": 43223576,
@@ -2430,9 +2847,12 @@
 				"normalized.volume.10": 1.1220962077080376,
 				"normalized.volume.50": 1.235626594153154,
 				"strength.close.50": -1.2232678569584339,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 94.606560764,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-01-14"
 		},
@@ -2444,6 +2864,8 @@
 				"value.close.average.10": 92.85300079999999,
 				"value.close.average.50": 89.83000020000001,
 				"value.close.average.20": 92.86300055000001,
+				"value.close.max.5": 97.25,
+				"value.close.min.5": 88.209999,
 				"value.volume.average.5": 55941120,
 				"value.volume.average.10": 50029070,
 				"value.volume.average.50": 43383802,
@@ -2459,9 +2881,12 @@
 				"normalized.volume.10": 0.9842897339486822,
 				"normalized.volume.50": 1.1350572732191613,
 				"strength.close.50": -2.928450035019991,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 94.606560764,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": true
 			},
 			"interval": "2021-01-15"
 		},
@@ -2473,6 +2898,8 @@
 				"value.close.average.10": 92.56800019999999,
 				"value.close.average.50": 89.99200017999999,
 				"value.close.average.20": 92.4935006,
+				"value.close.max.5": 95.360001,
+				"value.close.min.5": 88.209999,
 				"value.volume.average.5": 55230320,
 				"value.volume.average.10": 49360320,
 				"value.volume.average.50": 42954510,
@@ -2488,9 +2915,12 @@
 				"normalized.volume.10": 0.9139952901439861,
 				"normalized.volume.50": 1.0502994912524901,
 				"strength.close.50": 1.302369268554105,
-				"trending.up.test1": true,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 94.606560764,
+				"is.trending.up.1": true,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-01-19"
 		},
@@ -2502,6 +2932,8 @@
 				"value.close.average.10": 92.1660005,
 				"value.close.average.50": 90.10700018,
 				"value.close.average.20": 92.1350007,
+				"value.close.max.5": 91.779999,
+				"value.close.min.5": 88.209999,
 				"value.volume.average.5": 48733020,
 				"value.volume.average.10": 49458100,
 				"value.volume.average.50": 42727380,
@@ -2517,9 +2949,12 @@
 				"normalized.volume.10": 0.7114264397540544,
 				"normalized.volume.50": 0.8234953793094733,
 				"strength.close.50": -0.5764442950304902,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 94.606560764,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-01-20"
 		},
@@ -2531,6 +2966,8 @@
 				"value.close.average.10": 92.2860002,
 				"value.close.average.50": 90.22000021999999,
 				"value.close.average.20": 92.05000050000001,
+				"value.close.max.5": 91.529999,
+				"value.close.min.5": 88.209999,
 				"value.volume.average.5": 47509660,
 				"value.volume.average.10": 49726540,
 				"value.volume.average.50": 42742704,
@@ -2546,9 +2983,12 @@
 				"normalized.volume.10": 1.0979267811514737,
 				"normalized.volume.50": 1.2773197502900144,
 				"strength.close.50": 3.5509476284864947,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": false
+				"value.close.support.61": 94.606560764,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-01-21"
 		},
@@ -2560,6 +3000,8 @@
 				"value.close.average.10": 92.04899989999998,
 				"value.close.average.50": 90.41340018000001,
 				"value.close.average.20": 92.03150035000002,
+				"value.close.max.5": 92.790001,
+				"value.close.min.5": 88.209999,
 				"value.volume.average.5": 51068700,
 				"value.volume.average.10": 52557160,
 				"value.volume.average.50": 42995158,
@@ -2575,9 +3017,12 @@
 				"normalized.volume.10": 1.3547802050186881,
 				"normalized.volume.50": 1.65607950551083,
 				"strength.close.50": 2.0866634891026568,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": false
+				"value.close.support.61": 94.606560764,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-01-22"
 		},
@@ -2589,6 +3034,8 @@
 				"value.close.average.10": 92.0039994,
 				"value.close.average.50": 90.73620016000001,
 				"value.close.average.20": 92.16050005000001,
+				"value.close.max.5": 94.129997,
+				"value.close.min.5": 88.75,
 				"value.volume.average.5": 52237460,
 				"value.volume.average.10": 54089290,
 				"value.volume.average.50": 42754152,
@@ -2604,9 +3051,12 @@
 				"normalized.volume.10": 1.0184437621569815,
 				"normalized.volume.50": 1.2884573175489482,
 				"strength.close.50": 1.7265276516863195,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 94.606560764,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-01-25"
 		},
@@ -2618,6 +3068,8 @@
 				"value.close.average.10": 91.7499993,
 				"value.close.average.50": 91.00480016000002,
 				"value.close.average.20": 92.3055001,
+				"value.close.max.5": 94.709999,
+				"value.close.min.5": 88.75,
 				"value.volume.average.5": 55104260,
 				"value.volume.average.10": 55167290,
 				"value.volume.average.50": 43050908,
@@ -2633,9 +3085,12 @@
 				"normalized.volume.10": 1.0776150142593555,
 				"normalized.volume.50": 1.380902349376696,
 				"strength.close.50": 0.8009261244431731,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": true
+				"value.close.support.61": 94.606560764,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": true,
+				"is.close.max.5": true,
+				"is.close.min.5": false
 			},
 			"interval": "2021-01-26"
 		},
@@ -2647,6 +3102,8 @@
 				"value.close.average.10": 91.0979988,
 				"value.close.average.50": 91.14480015999999,
 				"value.close.average.20": 92.16749999999999,
+				"value.close.max.5": 94.709999,
+				"value.close.min.5": 88.839996,
 				"value.volume.average.5": 62735340,
 				"value.volume.average.10": 55734180,
 				"value.volume.average.50": 43772880,
@@ -2662,9 +3119,12 @@
 				"normalized.volume.10": 1.3159106315011722,
 				"normalized.volume.50": 1.675494050197291,
 				"strength.close.50": -9.835155101140243,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 92.22699899999999,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-01-27"
 		},
@@ -2676,6 +3136,8 @@
 				"value.close.average.10": 90.67199860000001,
 				"value.close.average.50": 91.26660009999999,
 				"value.close.average.20": 92.0124997,
+				"value.close.max.5": 94.709999,
+				"value.close.min.5": 87.519997,
 				"value.volume.average.5": 61225800,
 				"value.volume.average.10": 54367730,
 				"value.volume.average.50": 44105384,
@@ -2691,9 +3153,12 @@
 				"normalized.volume.10": 0.8653736324838281,
 				"normalized.volume.50": 1.06672691025658,
 				"strength.close.50": -1.4080784548117706,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 92.22699899999999,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-01-28"
 		},
@@ -2705,6 +3170,8 @@
 				"value.close.average.10": 90.1569984,
 				"value.close.average.50": 91.30480002,
 				"value.close.average.20": 91.6799996,
+				"value.close.max.5": 94.709999,
+				"value.close.min.5": 85.639999,
 				"value.volume.average.5": 58311360,
 				"value.volume.average.10": 54690030,
 				"value.volume.average.50": 44465192,
@@ -2720,9 +3187,12 @@
 				"normalized.volume.10": 1.035494037944393,
 				"normalized.volume.50": 1.2736074545680585,
 				"strength.close.50": -2.3943794673730414,
-				"trending.up.test1": false,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 92.22699899999999,
+				"is.trending.up.1": false,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": true
 			},
 			"interval": "2021-01-29"
 		},
@@ -2734,6 +3204,8 @@
 				"value.close.average.10": 90.1019989,
 				"value.close.average.50": 91.39080007999999,
 				"value.close.average.20": 91.47749985,
+				"value.close.max.5": 94.709999,
+				"value.close.min.5": 85.639999,
 				"value.volume.average.5": 55765840,
 				"value.volume.average.10": 54001650,
 				"value.volume.average.50": 44722908,
@@ -2749,9 +3221,12 @@
 				"normalized.volume.10": 0.7844075134741253,
 				"normalized.volume.50": 0.9471499482994263,
 				"strength.close.50": 1.9132476313145805,
-				"trending.up.test1": true,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 92.22699899999999,
+				"is.trending.up.1": true,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-02-01"
 		},
@@ -2763,6 +3238,8 @@
 				"value.close.average.10": 90.04299929999999,
 				"value.close.average.50": 91.51720008000001,
 				"value.close.average.20": 91.30549975,
+				"value.close.max.5": 88.860001,
+				"value.close.min.5": 85.639999,
 				"value.volume.average.5": 50646020,
 				"value.volume.average.10": 52875140,
 				"value.volume.average.50": 44800548,
@@ -2778,9 +3255,12 @@
 				"normalized.volume.10": 0.6401874302365913,
 				"normalized.volume.50": 0.755571114889041,
 				"strength.close.50": 0.9066830711535018,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": false
+				"value.close.support.61": 92.22699899999999,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-02-02"
 		},
@@ -2792,6 +3272,8 @@
 				"value.close.average.10": 89.9569992,
 				"value.close.average.50": 91.56420004000002,
 				"value.close.average.20": 91.06149984999999,
+				"value.close.max.5": 88.860001,
+				"value.close.min.5": 85.639999,
 				"value.volume.average.5": 42440360,
 				"value.volume.average.10": 52587850,
 				"value.volume.average.50": 44444470,
@@ -2807,9 +3289,12 @@
 				"normalized.volume.10": 0.6144556204522528,
 				"normalized.volume.50": 0.7270398319520966,
 				"strength.close.50": -0.7052300910731931,
-				"trending.up.test1": false,
-				"trending.up.test2": true,
-				"trending.up.test3": false
+				"value.close.support.61": 92.22699899999999,
+				"is.trending.up.1": false,
+				"is.trending.up.2": true,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-02-03"
 		},
@@ -2821,6 +3306,8 @@
 				"value.close.average.10": 89.5879989,
 				"value.close.average.50": 91.62819998,
 				"value.close.average.20": 90.93699955,
+				"value.close.max.5": 88.860001,
+				"value.close.min.5": 85.639999,
 				"value.volume.average.5": 39189000,
 				"value.volume.average.10": 50207400,
 				"value.volume.average.50": 44360134,
@@ -2836,9 +3323,12 @@
 				"normalized.volume.10": 0.6132880810398467,
 				"normalized.volume.50": 0.6941277499297004,
 				"strength.close.50": -0.03470846987973744,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": false
+				"value.close.support.61": 92.22699899999999,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-02-04"
 		},
@@ -2850,6 +3340,8 @@
 				"value.close.average.10": 89.09899899999999,
 				"value.close.average.50": 91.68000006,
 				"value.close.average.20": 90.57399945,
+				"value.close.max.5": 88.860001,
+				"value.close.min.5": 87.660004,
 				"value.volume.average.5": 33902300,
 				"value.volume.average.10": 46106830,
 				"value.volume.average.50": 44033988,
@@ -2865,9 +3357,12 @@
 				"normalized.volume.10": 0.654950687349358,
 				"normalized.volume.50": 0.6857816285002394,
 				"strength.close.50": 0.04115101239978628,
-				"trending.up.test1": true,
-				"trending.up.test2": false,
-				"trending.up.test3": false
+				"value.close.support.61": 92.22699899999999,
+				"is.trending.up.1": true,
+				"is.trending.up.2": false,
+				"is.trending.up.3": false,
+				"is.close.max.5": false,
+				"is.close.min.5": false
 			},
 			"interval": "2021-02-05"
 		},
@@ -2879,6 +3374,8 @@
 				"value.close.average.10": 88.8329994,
 				"value.close.average.50": 91.80800007999999,
 				"value.close.average.20": 90.4184994,
+				"value.close.max.5": 91.470001,
+				"value.close.min.5": 87.839996,
 				"value.volume.average.5": 34958420,
 				"value.volume.average.10": 45362130,
 				"value.volume.average.50": 44250002,
@@ -2894,9 +3391,12 @@
 				"normalized.volume.10": 1.0502130301200583,
 				"normalized.volume.50": 1.0766078609442775,
 				"strength.close.50": 3.843488986963205,
-				"trending.up.test1": true,
-				"trending.up.test2": true,
-				"trending.up.test3": false
+				"value.close.support.61": 92.22699899999999,
+				"is.trending.up.1": true,
+				"is.trending.up.2": true,
+				"is.trending.up.3": false,
+				"is.close.max.5": true,
+				"is.close.min.5": false
 			},
 			"interval": "2021-02-08"
 		}
@@ -2910,29 +3410,42 @@
 					"color": "steelblue"
 				},
 				{
-					"field": "value.close.average.5",
-					"color": "orange"
-				},
-				{
-					"field": "value.close.average.10",
+					"field": "value.close.support.61",
 					"color": "red"
 				},
 				{
-					"field": "value.close.average.20",
-					"color": "pink"
+					"field": "value.close.average.5",
+					"color": "orage"
 				},
 				{
-					"field": "value.close.smooth.gaussian.10-2",
-					"color": "green"
-				},
-				{
-					"field": "value.close.smooth.silverman.10-2",
-					"color": "grey"
+					"field": "value.close.max.5",
+					"color": "white"
 				}
 			],
 			"points": [
 				{
-					"field": "trending.up.test3",
+					"field": "is.trending.up.3",
+					"value": "close",
+					"color": "white"
+				}
+			]
+		},
+		{
+			"title": "Points Close",
+			"lines": [
+				{
+					"field": "close",
+					"color": "steelblue"
+				}
+			],
+			"points": [
+				{
+					"field": "is.close.max.5",
+					"value": "close",
+					"color": "red"
+				},
+				{
+					"field": "is.close.min.5",
 					"value": "close",
 					"color": "white"
 				}
